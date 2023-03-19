@@ -1,0 +1,403 @@
+@font-face{
+    font-family: sukumvit;
+    src: url('../font/SukhumvitSet-Bold.woff') format('woff'),
+    url('../font/SukhumvitSet-Bold.woff2') format('woff2'),
+    url('../font/SukhumvitSet-Bold.ttf') format('ttf');
+    font-style: normal;
+    font-weight: 700;
+    font-display: fallback;
+}
+
+@font-face{
+    font-family: sukumvit;
+    src:url('../font/SukhumvitSet-Medium.woff') format('woff'),
+    url('../font/SukhumvitSet-Medium.woff2') format('woff2'),
+    url('../font/SukhumvitSet-Medium.ttf') format('ttf');
+    font-style: normal;
+    font-weight: 400;
+        font-display: fallback;
+}
+
+*{
+    font-family: sukumvit ;
+}
+
+.active {
+    background-color: #307FB5;
+}
+.banner-pkn-bn{
+    width: 100vw;
+    height: 100vh;
+}
+#section{
+    width: 100vw;
+    height: 100vh;
+}
+
+.container-header{
+    display: none;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    width: fit-content;
+    font-family: 'sukumvit';
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 51px;
+
+}
+
+.test-container{
+    position: relative;
+}
+.header-section-1{
+    width: 75%;
+    height: 100vh;
+}
+
+.header-section-1 img{
+    width: 100%;
+    height: 100%;
+}
+
+#header-section-1.fixed{
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.spacer{
+    height: 1200px;
+}
+
+
+
+.box-2{
+    overflow-y: hidden;
+}
+
+#section-1-image-box{
+    width: 70%;
+    position:absolute;
+    top: 0;
+    left: 0;   
+    height: 100vh;
+    padding: 30px 20px;
+}
+
+#section-1-image-box.fixed{
+    position: fixed;
+    top: 0;
+    left: unset;   
+}
+
+.image-section-1-class{
+    position:absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+#section-1-image-box.active-section-1-point-1 #id-image-section-1{
+    opacity: 1;
+    transition: opacity 1s ease;
+}
+
+#section-1-image-box.active-section-1-point-1 #section-1-header-1{
+    display: block;
+    transition: all 1s ease;
+}
+
+.section-1-header{
+    display: none;
+    transition: all 1s ease;
+}
+
+#section-1-image-box.active-section-1-point-2 #id-image-section-2{
+    opacity: 1;
+    transition: opacity 1s ease;
+}
+
+#section-1-image-box.active-section-1-point-2 #section-1-header-2{
+    display: block;
+    transition: all 1s ease;
+}
+
+#section-1-image-box.active-section-1-point-3 #id-image-section-3{
+    opacity: 1;
+    transition: opacity 1s ease;
+}
+
+#section-1-image-box.active-section-1-point-3 #section-1-header-3{
+    display: block;
+    transition: all 1s ease;
+}
+
+#section-1-image-box.active-section-1-point-4 #id-image-section-4{
+    opacity: 1;
+    transition: opacity 1s ease;
+}
+
+#section-1-image-box.active-section-1-point-4 #section-1-header-4{
+    display: block;
+    transition: all 1s ease;
+}
+
+
+
+#section-1-image-box.active-section-1-point-1 .container-header,
+#section-1-image-box.active-section-1-point-2 .container-header,
+#section-1-image-box.active-section-1-point-3 .container-header,
+#section-1-image-box.active-section-1-point-4 .container-header{
+    display: block;
+}
+
+.section-1-content-container{
+    display: flex;
+}
+
+.image-section-1-class{
+    padding-bottom:70px;
+}
+
+
+/* style */
+.section-1-content-header{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 38px;
+    color: #A80000;
+}
+
+.section-1-content-detail{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    color: #000000;
+}
+
+h4{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height:22.64px
+} 
+
+h4 span{
+    font-size: 36px;
+    line-height:40.75px
+}
+
+
+/* acc */
+
+  
+  .panel {
+    padding: 0 18px;
+    height: 0px;
+    background-color: white;
+    overflow: hidden;
+    transition: all .5s ease;
+  }
+
+  .accordion-header span{
+    width: 28px;
+    height: 28px;
+    border-radius: 100%;
+    background-color: #FFD380;
+    border: 3px solid #E49600;
+    font-size: 16px;
+    font-weight: 700; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .accordion-header{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 32px;
+    background-color: transparent;
+  }
+
+  .accordion{
+      padding: 15px 5px;
+      border-bottom: 1.5px solid #E49600;
+    }
+
+  .accordion:first-child {
+    border-top: 1.5px solid #E49600;
+  }
+
+  .accordion.show .panel{
+    height: 150px;
+    padding-top: 20px;
+    transition: all .5s ease;
+  }
+
+  .accordion.show.big .panel{
+    height: 200px;
+    padding-top: 20px;
+    transition: all .5s ease;
+  }
+
+  .accordion-container{
+    display: none;
+  }
+
+  .accordion-container.display-show{
+    display: block;
+  }
+
+  .position-to-top{
+      position: relative;
+      z-index: 9999;
+  }
+
+  #content-with-base #header-base-1{
+      opacity: 0;
+      transition: all .5s ease ;
+  }
+  #content-with-base.base-1 #header-base-1{
+      opacity: 1;
+      transition: all .5s ease ;
+  }
+
+  #content-with-base .base-select img{
+      opacity: 0;
+      transition: all .5s ease ;
+  }
+
+  #content-with-base.base-1 .base-container-1 img{
+    opacity: 1;
+    transition: all .5s ease;
+  }
+
+  #content-with-base.base-2 .base-container-2 img{
+    opacity: 1;
+    transition: all .5s ease;
+  }
+
+
+  #content-with-base.base-3 .base-container-3 img{
+    opacity: 1;
+    transition: all .5s ease;
+  }
+
+  #content-with-base.base-4 .base-container-4 img{
+    opacity: 1;
+    transition: all .5s ease;
+  }
+
+  #content-with-base.base-5 .base-container-5 img{
+    opacity: 1;
+    transition: all .5s ease;
+  }
+  #content-with-base.base-6 .base-container-6 img{
+    opacity: 1;
+    transition: all .5s ease;
+  }
+  #content-with-base.base-7 .base-container-7 img{
+    opacity: 1;
+    transition: all .5s ease;
+  }
+  #content-with-base.base-8 .base-container-8 img{
+    opacity: 1;
+    transition: all .5s ease;
+  }
+  #content-with-base.base-9 .base-container-9 img{
+    opacity: 1;
+    transition: all .5s ease;
+  }
+  #content-with-base.base-10 .base-container-10 img{
+    opacity: 1;
+    transition: all .5s ease;
+  }
+  #content-with-base.base-11 .base-container-11 img{
+    opacity: 1;
+    transition: all .5s ease;
+  }
+  #content-with-base.base-12 .base-container-12 img{
+    opacity: 1;
+    transition: all .5s ease;
+  }
+  #content-with-base.base-13 .base-container-13 img{
+    opacity: 1;
+    transition: all .5s ease;
+  }
+  #content-with-base.base-14 .base-container-14 img{
+    opacity: 1;
+    transition: all .5s ease;
+  }
+  #content-with-base.base-15 .base-container-15 img{
+    opacity: 1;
+    transition: all .5s ease;
+  }
+  #content-with-base.base-16 .base-container-16 img{
+    opacity: 1;
+    transition: all .5s ease;
+  }
+  
+  .future-box{
+    cursor: pointer;
+  }
+
+  .overlay-future{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background: rgba(97, 205, 245, 0.95);
+      transform: translateY(500px);
+      transition: all .75s ease;
+  }
+
+  .future-box:hover .overlay-future{
+    transform: translateY(0);
+    transition: all .75s ease;
+  } 
+
+  .img-talk-2, .img-talk-3, .img-talk-4, .img-talk-5{
+      opacity: 0;
+      transition: all 0.75s ease;
+  }
+
+  #section-talk .img-talk-1{
+    opacity: 1;
+  }
+
+  #section-talk.talk-2 .img-talk-2{
+    opacity: 1;
+    transition: all 0.75s ease;
+  }
+
+  #section-talk.talk-3 .img-talk-2,  #section-talk.talk-3 .img-talk-3{
+    opacity: 1;
+    transition: all 0.75s ease;
+  }
+
+
+  #section-talk.talk-4 .img-talk-2,  #section-talk.talk-4 .img-talk-3,#section-talk.talk-4 .img-talk-4{
+    opacity: 1;
+    transition: all 0.75s ease;
+  }
+
+  #section-talk.talk-5 .img-talk-2,  #section-talk.talk-5 .img-talk-3,#section-talk.talk-5 .img-talk-4,#section-talk.talk-5 .img-talk-5{
+    opacity: 1;
+    transition: all 0.75s ease;
+  }
+  .img-talk-2-2{
+    opacity: 0;
+    transition: all 0.75s ease; 
+  }
+  #section-talk-2.talk-2-1 .img-talk-2-2{
+    opacity: 1;
+    transition: all 0.75s ease;
+  }
+
+
+
