@@ -401,3 +401,277 @@ h4 span{
 
 
 
+
+  .axis-line{
+    width: 5px;
+    background-color: black;
+    height: 80px;
+  }
+
+  .img-comp-container {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16/9;
+  }
+  
+  .img-comp-img {
+    position: absolute;
+    width: auto;
+    height: auto;
+    overflow:hidden;
+  }
+  
+  .img-comp-img img {
+    display:block;
+    vertical-align:middle;
+  }
+  
+  .img-comp-slider {
+    position: absolute;
+    z-index:9;
+    cursor: ew-resize;
+    /*set the appearance of the slider:*/
+    width: 40px;
+    height: 40px;
+    background: url('../images/slide.png');
+    border-radius: 50%;
+    background-size: 100% 100%;
+  }
+
+  .text-before{
+    position: absolute;
+    bottom: -40px;
+    left: 0;
+  }
+  .text-after{
+    position: absolute;
+    bottom: -40px;
+    right: 0;
+  }
+
+  section{
+    margin: 120px 0;
+  }
+
+  footer{
+    background-color: #000000;
+    color: white;
+  }
+
+  .header-footer{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  .sub-footer{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25.39pxz
+  }
+
+  .sticky-one-content{
+    width: 30%;
+  }
+
+  .sticky-one-emptry{
+    width: 70%;
+  }
+
+  .oversize-header{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 57px;
+  }
+
+  #section-2-acc{
+    margin-top: 200px; padding-left: 20px;
+  }
+
+  .col-fix-image{
+    height: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    position: relative;
+  }
+
+  .base-select{
+    position: absolute; top: 0; bottom: 0; left: 0; right: 0; padding-top: 50px; padding-bottom: 50px;
+  }
+
+  .future-container{
+    height: 50vh;
+  }
+
+  .future-box h5{
+   font-size: 36px; font-weight: 700; line-height: 57px;
+    color: #61CDF5;
+  }
+
+  .talk-sticy{
+    height: 100%; width: 100%; position: relative;
+  }
+
+  .talk-sticy-container{
+    height: 100vh; width: 100%; position: sticky; top: 0;
+  }
+
+
+    .talk-sticy-2{
+      height: 100%; width: 100%; position: relative;
+    }
+
+    .talk-sticy-container-2{
+      height: 100vh; width: 100%; position: sticky; top: 0;
+    }
+
+
+  @media only screen and (max-width: 600px) {
+    .section-1-header{
+      font-size: 15px;
+    }
+
+    #section-1-image-box {
+      width: 100%;
+      height: 60vh;
+      position: sticky;
+    }
+
+    #section-1-image-box.fixed {
+      position: sticky;
+    }
+
+    .sticky-one-content{
+      width: 100%;
+    }
+
+    .sticky-one-emptry{
+      width: 0%;
+    }
+  
+    .section-1-content-detail{
+      font-size: 14px;
+    }
+
+    .oversize-header{
+      font-size: 24px;
+      line-height: 27px;
+    }
+
+    h4{
+      font-style: normal;
+      font-weight: 700;
+      font-size: 14px;
+    } 
+    
+    h4 span{
+        font-size: 24px;
+    }
+
+    .section-1-content-header{
+      font-size: 16px;
+    }
+
+    .accordion-header{
+      font-size: 16px;
+    }
+
+      .accordion-header span{
+        width: 22px;
+        height: 22px;
+        border-radius: 100%;
+        font-size: 12px;
+    }
+
+
+    .panel {
+      padding: 0 10px;
+      height: 0px;
+      background-color: white;
+      overflow: hidden;
+      transition: all .5s ease;
+      font-size: 12px;
+    }
+
+    .accordion.show .panel {
+      height: 70px;
+      padding-top: 0;
+    }
+
+    .accordion.show.big .panel {
+      height: 90px;
+      padding-top: 0;
+    }
+
+    .accordion{
+      padding: 0 5px;
+    }
+
+    #section-2-acc{
+      padding-right: 20px;
+    }
+    
+    .col-fix-image{
+      height: 50vh;
+      padding-top: 25px;
+      padding-bottom: 25px;
+    }
+
+    .col-accdion{
+      min-height: 40vh;
+    }
+
+    .base-select{
+     padding-top: 25px; padding-bottom: 25px;
+    }
+
+    .section-1-5-image-1 img{
+      width: 80%;
+    }
+    .section-1-5-image-2 img{
+      width: 90%;
+    }
+
+    .section-1-5-image-3 img{
+      width: 100%;
+    }
+
+    .future-container{
+      height: unset;
+    }
+
+    .future-box h5{
+      font-size: 18px;
+    }
+
+    .talk-sticy{
+      height: 300px;
+    }
+
+    .talk-sticy-container{
+      display: flex;
+      align-items: center;
+    }
+
+    .talk-sticy-2{
+      height: 300px;
+    }
+
+    .talk-sticy-container-2{
+      display: flex;
+      align-items: center;
+    }
+
+    .header-footer{
+      font-size: 10px;
+    }
+  
+    .sub-footer{
+      font-size: 10px;
+    }
+  
+
+    /* .banner-pkn-bn img{ */
+      /* object-fit: cover;
+    } */
+  }

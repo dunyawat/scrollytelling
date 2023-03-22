@@ -10,7 +10,8 @@
 </head>
 <body>
    <div class="banner-pkn-bn mb-5">
-        <img src="/assets/images/banner.png" width="100%" height="100%" alt="">
+        <img class="d-none d-lg-block" src="/assets/images/banner.png" width="100%" height="100%" alt="">
+        <img class="d-block d-lg-none" src="/assets/images/banner-mobile.png" width="100%" height="100%" alt="">
     </div>
      <!-- <div class="spacer s2"></div>
     
@@ -63,10 +64,10 @@
         </div>
         <div class="spacer s1" id="sec1" style="background: #FFF8F8">
             <div id="section-1-content-container-1" class="section-1-content-container">
-                <div style="width: 70%;">
+                <div class="sticky-one-emptry">
 
                 </div>
-                <div class="pe-5" style="width: 30%;">
+                <div class="px-4 pe-lg-5 sticky-one-content">
                     <div class="section-1-content-header">
                         ย่านเศรษฐกิจศูนย์กลางเมือง 1 ใน 6 ย่านเศรษฐกิจศูนย์กลางรอง
                     </div>
@@ -85,10 +86,10 @@
         </div>
         <div class="spacer s1" id="sec2" style="background: #FFF8F8">
             <div id="section-1-content-container-2" class="section-1-content-container">
-                <div style="width: 70%;">
+                <div class="sticky-one-emptry">
 
                 </div>
-                <div class="pe-5" style="width: 30%;">
+                <div class="px-4 pe-lg-5 sticky-one-content">
                     <div class="section-1-content-header mb-3">
                         เศรษฐกิจใหม่กระจุกตัวหนาเเน่นในย่านพระโขนง-บางนา
                     </div>
@@ -104,12 +105,12 @@
         </div>
         <div class="spacer s1" id="sec3" style="background: linear-gradient(180deg, #FFF8F8 0%, #F0FBFF 100%);">
             <div id="section-1-content-container-3" class="section-1-content-container">
-                <div style="width: 70%;">
+                <div class="sticky-one-emptry">
 
                 </div>
-                <div class="pe-5" style="width: 30%;">
+                <div class="px-4 pe-lg-5 sticky-one-content">
                     <div class="section-1-content-header mb-3">
-                        <span style="font-size: 36px; line-height:  57.13px">1 ใน 5</span> <br>
+                        <span class="oversize-header">1 ใน 5</span> <br>
                         ย่านน่าอยู่อาศัยของกรุงเทพฯ
                     </div>
                     <div class="section-1-content-detail mb-3">
@@ -121,17 +122,14 @@
         </div>
         <div class="spacer s1" id="sec4" style="background-color:#F0FBFF;">
             <div id="section-1-content-container-3" class="section-1-content-container">
-                <div style="width: 70%;">
+                <div class="sticky-one-emptry">
 
                 </div>
-                <div class="pe-5" style="width: 30%;">
+                <div class="px-4 pe-lg-5 sticky-one-content">
                     <div class="section-1-content-header mb-3" style="color: #000;">
                         ระดับความสูงจากระดับน้ำทะเลปานกลาง
                     </div>
-                    <h5 class="mb-4" style="font-style: normal;
-                    font-weight: 700;
-                    font-size: 36px;
-                color: #6B5DE8; line-height: 57px;">
+                    <h5 class="mb-4 oversize-header" style="color: #6B5DE8;">
                         กรุงเทพฯ <br> ตะวันออกเปราะบางเสี่ยงน้ำท่วมขัง
                     </h5>
                     <div class="section-1-content-detail mb-3"> หนึ่งในพื้นที่เปราะบาง ที่เสี่ยงน้ำท่วมของกรุงเทพฯซึ่งมีระดับความสูงจากระดับน้ำทะเลปานกลางเฉลี่ยเพียง
@@ -144,21 +142,21 @@
     <div style="margin-top: -650px; position: relative; z-index: 9999; background-color: #fff; padding-top: 50px;">
         <div class="text-center">
             <p class="text-center">แต่อย่างไรก็ตามพระโขนงบางนาคือ <br> พื้นที่ที่มีศักยภาพและความท้าทายที่จะเปลี่ยนจาก</p>
-            <div class="text-center" style="position: relative; z-index: 3;"><img src="/assets/images/fame1-5-1.png" alt=""></div>
-            <div class="text-center" style="margin-top: -20px; position: relative; z-index: 2;"><img src="/assets/images/fame1-5-2.png" alt=""></div>
-            <div class="text-center">
+            <div class="text-center section-1-5-image-1" style="position: relative; z-index: 3;"><img src="/assets/images/fame1-5-1.png" alt=""></div>
+            <div class="text-center section-1-5-image-2" style="margin-top: -20px; position: relative; z-index: 2;"><img src="/assets/images/fame1-5-2.png" alt=""></div>
+            <div class="text-center section-1-5-image-3">
                 <img src="/assets/images/image-section1-5.png" alt="">
             </div>
         </div>
     </div>
 
-    <div style="margin-top: 200px; padding-left: 20px;">
+    <div id="section-2-acc">
         <div id="content-with-base" style="position:sticky; top: 0; height: 100vh; display: flex; flex-direction: column;">
             <div class="container-header" id="header-base-1" style="display: block; height: 10vh;">
                 <span class="section-1-header" style="display: block;">พระโขนง-บางนา ย่านแห่งความหลากหลายของการใช้ชีวิต<span>
             </div>
             <div class="row m-0" style="height: 90vh">
-                <div class="col-lg-4 p-0 pt-4 pe-4">
+                <div class="col-lg-4 p-0 pt-4 pe-4 col-accdion">
                     <div id="accordion-set-1" class="accordion-container display-show">
                         <div class="accordion" id="accordion-1">
                             <div class="d-flex accordion-header align-items-center h-100"> <span class="me-2">1</span> อ่อนนุช </div>
@@ -246,69 +244,69 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-8 px-0" style="height: 100%; padding-top: 50px; padding-bottom: 50px; position: relative;">
+                <div class="col-lg-8 px-0 col-fix-image">
                     <img src="/assets/images/base.png" width="100%" height="100%" alt="">
-                    <div class="base-container-1 base-select" style="position: absolute; top: 0; bottom: 0; left: 0; right: 0; padding-top: 50px; padding-bottom: 50px;">
+                    <div class="base-container-1 base-select">
                         <img src="/assets/images/base-1.png" width="100%"
                         height="100%" alt="">
                     </div>
-                    <div class="base-container-2 base-select" style="position: absolute; top: 0; bottom: 0; left: 0; right: 0; padding-top: 50px; padding-bottom: 50px;">
+                    <div class="base-container-2 base-select">
                         <img src="/assets/images/base-2.png" width="100%"
                         height="100%" alt="">
                     </div>
-                    <div class="base-container-3 base-select" style="position: absolute; top: 0; bottom: 0; left: 0; right: 0; padding-top: 50px; padding-bottom: 50px;">
+                    <div class="base-container-3 base-select">
                         <img src="/assets/images/base-3.png" width="100%"
                         height="100%" alt="">
                     </div>
-                    <div class="base-container-4 base-select" style="position: absolute; top: 0; bottom: 0; left: 0; right: 0; padding-top: 50px; padding-bottom: 50px;">
+                    <div class="base-container-4 base-select">
                         <img src="/assets/images/base-4.png" width="100%"
                         height="100%" alt="">
                     </div>
-                    <div class="base-container-5 base-select" style="position: absolute; top: 0; bottom: 0; left: 0; right: 0; padding-top: 50px; padding-bottom: 50px;">
+                    <div class="base-container-5 base-select">
                         <img src="/assets/images/base-5.png" width="100%"
                         height="100%" alt="">
                     </div>
-                    <div class="base-container-6 base-select" style="position: absolute; top: 0; bottom: 0; left: 0; right: 0; padding-top: 50px; padding-bottom: 50px;">
+                    <div class="base-container-6 base-select">
                         <img src="/assets/images/base-6.png" width="100%"
                         height="100%" alt="">
                     </div>
-                    <div class="base-container-7 base-select" style="position: absolute; top: 0; bottom: 0; left: 0; right: 0; padding-top: 50px; padding-bottom: 50px;">
+                    <div class="base-container-7 base-select">
                         <img src="/assets/images/base-7.png" width="100%"
                         height="100%" alt="">
                     </div>
-                    <div class="base-container-8 base-select" style="position: absolute; top: 0; bottom: 0; left: 0; right: 0; padding-top: 50px; padding-bottom: 50px;">
+                    <div class="base-container-8 base-select">
                         <img src="/assets/images/base-8.png" width="100%"
                         height="100%" alt="">
                     </div>
-                    <div class="base-container-9 base-select" style="position: absolute; top: 0; bottom: 0; left: 0; right: 0; padding-top: 50px; padding-bottom: 50px;">
+                    <div class="base-container-9 base-select">
                         <img src="/assets/images/base-9.png" width="100%"
                         height="100%" alt="">
                     </div>
-                    <div class="base-container-10 base-select" style="position: absolute; top: 0; bottom: 0; left: 0; right: 0; padding-top: 50px; padding-bottom: 50px;">
+                    <div class="base-container-10 base-select">
                         <img src="/assets/images/base-10.png" width="100%"
                         height="100%" alt="">
                     </div>
-                    <div class="base-container-11 base-select" style="position: absolute; top: 0; bottom: 0; left: 0; right: 0; padding-top: 50px; padding-bottom: 50px;">
+                    <div class="base-container-11 base-select">
                         <img src="/assets/images/base-11.png" width="100%"
                         height="100%" alt="">
                     </div>
-                    <div class="base-container-12 base-select" style="position: absolute; top: 0; bottom: 0; left: 0; right: 0; padding-top: 50px; padding-bottom: 50px;">
+                    <div class="base-container-12 base-select">
                         <img src="/assets/images/base-12.png" width="100%"
                         height="100%" alt="">
                     </div>
-                    <div class="base-container-13 base-select" style="position: absolute; top: 0; bottom: 0; left: 0; right: 0; padding-top: 50px; padding-bottom: 50px;">
+                    <div class="base-container-13 base-select">
                         <img src="/assets/images/base-13.png" width="100%"
                         height="100%" alt="">
                     </div>
-                    <div class="base-container-14 base-select" style="position: absolute; top: 0; bottom: 0; left: 0; right: 0; padding-top: 50px; padding-bottom: 50px;">
+                    <div class="base-container-14 base-select">
                         <img src="/assets/images/base-14.png" width="100%"
                         height="100%" alt="">
                     </div>
-                    <div class="base-container-15 base-select" style="position: absolute; top: 0; bottom: 0; left: 0; right: 0; padding-top: 50px; padding-bottom: 50px;">
+                    <div class="base-container-15 base-select">
                         <img src="/assets/images/base-15.png" width="100%"
                         height="100%" alt="">
                     </div>
-                    <div class="base-container-16 base-select" style="position: absolute; top: 0; bottom: 0; left: 0; right: 0; padding-top: 50px; padding-bottom: 50px;">
+                    <div class="base-container-16 base-select">
                         <img src="/assets/images/base-16.png" width="100%"
                         height="100%" alt="">
                     </div>
@@ -357,19 +355,13 @@
                         <div class="section-1-content-header mb-3 " style="color: black;">
                             การเข้าถึงระบบคมนาคมขนส่ง ย่านแห่งการเชื่อมต่อที่เข้าถึงได้ง่ายทั้งจาก
                         </div>
-                        <h5 class="mb-4" style="font-style: normal;
-                    font-weight: 700;
-                    font-size: 36px;
-                color: #6B5DE8; line-height: 40px;">
+                        <h5 class="mb-4 oversize-header" style="color: #6B5DE8;">
                         รถ ราง เรือ <br> และสนามบิน
                     </h5>
                         <div class="section-1-content-detail mb-4">
                             จากการวิเคราะห์ ดัชนีการเข้าถึงระบบคมนาคมขนส่ง(Transit Score) พบว่า ย่านพระโขนง - บางนา มีระดับการเข้าถึงระบบคมนาคมขนส่ง
                         </div>
-                        <h5 class="mb-4" style="font-style: normal;
-                        font-weight: 700;
-                        font-size: 36px;
-                        line-height: 40px;  color: #6B5DE8;">
+                        <h5 class="mb-4 oversize-header" style="color: #6B5DE8;">
                          เฉลี่ยถึง 65 <br> คะแนนเต็ม 100
                         </h5>
                     </div>
@@ -389,10 +381,7 @@
                         <div class="section-1-content-detail mb-4">
                             ย่านพระโขนง - บางนา สามารถเข้าถึงได้จากคมนาคมทุกระบบ แต่เดินได้เพียงรอบพื้นที่สถานีรถไฟฟ้าและปากซอย จากลักษณะของพื้นที่ที่เป็นซอยลึกและตัน ซึ่งมีสัดส่วนพื้นที่เดินได้เพียง 8% จากพื้นที่ทั้งหมด
                         </div>
-                        <h5 class="mb-4" style="font-style: normal;
-                        font-weight: 700;
-                        font-size: 36px;
-                        line-height: 40px;  color: #00A885;">
+                        <h5 class="mb-4 oversize-header" style="color: #00A885;">
                        ค่าคะแนนเดินได้ <br> (Goodwalk Score): <br> 35 คะแนน เต็ม 100
                         </h5>
                     </div>
@@ -413,10 +402,7 @@
                         <div class="section-1-content-detail mb-4">
                             พระโขนง - บางนา เป็นย่านซอยลึกและซอยตัน ที่ทำให้การจราจรติดขัด และเชื่อมต่อไปยังพื้นที่อื่นได้ยากจากการวิเคราะห์ข้อมูลซอยตัน พบว่า ย่านพระโขนง -บางนามีสัดส่วนถนนที่
                         </div>
-                        <h5 class="mb-4" style="font-style: normal;
-                        font-weight: 700;
-                        font-size: 36px;
-                        line-height: 40px;  color: #A405DB;">
+                        <h5 class="mb-4 oversize-header" style="color: #A405DB;">
                 เป็นซอยตันกว่า 50%
                         </h5>
                     </div>
@@ -472,10 +458,7 @@
                             ย่านพระโขนง - บางนา มีพื้นที่สีเขียวต่อหัวประชากรในย่านน้อยกว่ามาตรฐาน WHO ที่ 9.0 ตร.ม/คน 
                             เขตพระโขนง อยู่ที่ 3.4 ตร.ม/คน เขตบางนา อยู่ที่ 5.0 ตร.ม/คน [นับรวมพื้นที่สวนธารณะ 7 ประเภทของ กทม.]
                         </div>
-                        <h5 class="mb-4" style="font-style: normal;
-                        font-weight: 700;
-                        font-size: 36px;
-                        line-height: 40px;  color: #00A885;">
+                        <h5 class="mb-4 oversize-header" style="color: #00A885;">
     ระยะการเข้าถึงสวนเฉลี่ย 2.5 กิโลเมตร
                         </h5>
                     </div>
@@ -532,10 +515,7 @@
                         <div class="section-1-content-detail mb-4">
                             แม้ว่า ย่านจะมีพื้นที่บริการทางการแพทย์อยู่บ้าง แต่หากพิจารณาประกอบกับพื้นที่ที่มีลักษณะเป็นซอยลึกและตัน มีปัญหาการจราจร ส่งผลให้เกิดความเสี่ยงในการเข้ารับบริการอย่างทันถ่วงที หากเกิดเหตุฉุกเฉิน
                         </div>
-                        <h5 class="mb-4" style="font-style: normal;
-                        font-weight: 700;
-                        font-size: 36px;
-                        line-height: 40px;  color: #A80000;">
+                        <h5 class="mb-4 oversize-header" style="color: #A80000;">
 ระยะเฉลี่ยในการเข้าถึง อยู่ที่ 3 กิโลเมตร
                         </h5>
                     </div>
@@ -556,10 +536,7 @@
                         <div class="section-1-content-detail mb-4">
                             ย่านที่มีสถานศึกษาหลากหลายระดับ ที่กระจายตัวอยู่ทั่วย่าน
                         </div>
-                        <h5 class="mb-4" style="font-style: normal;
-                        font-weight: 700;
-                        font-size: 36px;
-                        line-height: 40px;  color: #A405DB;">
+                        <h5 class="mb-4 oversize-header" style="color: #A405DB;">
 แต่ขาดแหล่งเรียนรู้นอกห้องเรียน
                         </h5>
                     </div>
@@ -613,10 +590,7 @@
                         <div class="section-1-content-detail mb-4">
                             ย่านที่มีโอกาสจากพื้นที่คูคลอง รวมกันยาวกว่า 53กิโลเมตร สินทรัพย์แต่เดิมของย่าน ที่สามารถนำมาใช้เป็นพื้นที่สนับสนุน
                         </div>
-                        <h5 class="mb-4" style="font-style: normal;
-                        font-weight: 700;
-                        font-size: 36px;
-                        line-height: 40px;  color: #005BE7;">
+                        <h5 class="mb-4 oversize-header" style="color: #005BE7;">
                             การบริหารจัดการน้ำรอระบาย
                         </h5>
                     </div>
@@ -652,110 +626,471 @@
         </div>
     </div>
     <div>
-        <div class="d-flex justify-content-center w-100 mt-5 pt-5">
-            <div class="container-header mb-4" style="display: block;">
-                <span class="section-1-header" style="display: block;">4 ภาพอนาคตทางเลือกของย่านพระโขนง-บางนา<span>
-            </div>
-        </div>
-        <div class="px-5">
-            <div class="row m-0">
-                <div class="col-lg-6 p-0 pe-4 mb-5" style="height: 50vh; background-color: transparent;">
-                    <div class="py-3 future-box" style="box-shadow: 0px 4px 20px rgba(97, 205, 245, 0.6); position: relative; overflow: hidden;">
-                        <div style="height: 35vh; display: flex; align-items: center; justify-content: center;">
-                            <img src="/assets/images/future-1.png" width="95%"  alt="">
-                        </div>
-                        <div class="text-center">
-                            <p class="mb-2">ภาพอนาคตฐาน</p>
-                            <h5 style="font-size: 36px; font-weight: 700; line-height: 57px;
-                            color: #61CDF5;">“รถไฟฟ้ามหานะเธอ”</h5>
-                        </div>
-                        <div class="overlay-future d-flex align-items-center justify-content-center">
-                            <p class="m-0 text-center" style="max-width: 65%; font-weight: 400;
-                            font-size: 20px;
-                            line-height: 32px;">ผู้คนผ่านมา ต่างคนต่างทำงาน วุ่นวายในเรื่องของตนเองผ่านไป ไม่ได้พบ ไม่ได้เจอกัน จะมีความรักยังยาก</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6  p-0 ps-4 mb-5"  style="height: 50vh;">
-                    <div class="py-3 future-box" style="box-shadow: 0px 4px 20px rgba(97, 205, 245, 0.6); position: relative;overflow: hidden;">
-                        <div style="height: 35vh; display: flex; align-items: center; justify-content: center;">
-                            <img src="/assets/images/future-2.png" width="95%"  alt="">
-                        </div>
-                        <div class="text-center">
-                            <p class="mb-2">ภาพอนาคตฐานทางเลือก</p>
-                            <h5 style="font-size: 36px; font-weight: 700; line-height: 57px;
-                            color: #61CDF5;">“The Wolf of Wall Street ”</h5>
-                        </div>
-                        <div class="overlay-future d-flex align-items-center justify-content-center">
-                            <p class="m-0 text-center" style="max-width: 65%; font-weight: 400;
-                            font-size: 20px;
-                            line-height: 32px;">ถนนกลายเป็นแหล่งรวมของสถาบันทางเศรษฐกิจสำคัญ ดูมีชีวิต ชีวา แต่ตัดขาดกับโลกภายนอก และทำให้ทุกคนมีโอกาสกลายเหยื่อทางเศรษฐกิจ แม้แต่ตัวเอง</p>
-                        </div>
-                   </div>
-                </div>
-                <div class="col-lg-6 p-0 pe-4" style="height: 50vh;">
-                    <div class="py-3 future-box" style="box-shadow: 0px 4px 20px rgba(97, 205, 245, 0.6); position: relative;overflow: hidden;">
-                        <div style="height: 35vh; display: flex; align-items: center; justify-content: center;">
-                            <img src="/assets/images/future-3.png" width="95%" height="100%"  alt="">
-                        </div>
-                        <div class="text-center">
-                            <p class="mb-2">ภาพอนาคตที่แย่ที่สุด</p>
-                            <h5 style="font-size: 36px; font-weight: 700; line-height: 57px;
-                            color: #61CDF5;">“Die Hard 4.0”</h5>
-                        </div>
-                        <div class="overlay-future d-flex align-items-center justify-content-center">
-                            <p class="m-0 text-center" style="max-width: 65%; font-weight: 400;
-                            font-size: 20px;
-                            line-height: 32px;">มีเทคโนโลยีให้ในชีวิตประจำวัน รวมถึงการบริหารเมืองแต่เข้าไม่ถึงคนทุกกลุ่ม ใช้ไม่เป็น ใช้ไม่เกิดประโยชน์สาธารณะจนทำให้ย่านทั้งย่านอยู่ในสภาพไม่ตาย แต่เลี้ยงไม่โต</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 p-0 ps-4" style="height: 50vh;">
-                    <div class="py-3 future-box" style="box-shadow: 0px 4px 20px rgba(97, 205, 245, 0.6); position: relative;overflow: hidden;">
-                        <div style="height: 35vh; display: flex; align-items: center; justify-content: center;">
-                            <img src="/assets/images/future-4.png" width="95%" height="90%"  alt="">
-                        </div>
-                        <div class="text-center">
-                            <p class="mb-2">ภาพอนาคตที่พึงประสงค์</p>
-                            <h5 style="font-size: 36px; font-weight: 700; line-height: 57px;
-                            color: #61CDF5;">“Downtown Cha Cha Cha”</h5>
-                        </div>
-                        <div class="overlay-future d-flex align-items-center justify-content-center">
-                            <p class="m-0 text-center" style="max-width: 65%; font-weight: 400;
-                            font-size: 20px;
-                            line-height: 32px;">พื้นที่กลางที่เปิดให้คนภายในพื้นที่ทำงานร่วมกับคนภายนอกในการยกระดับคุณภาพชีวิตของคนที่อยู่ และสมดุลทรัพยากรในพื้นที่กับองค์ความรู้จากภายนอกผ่านกระบวนการทางสังคม</p>
-                        </div>
-                    </div>
+        <div class="container">
+            <div class="d-flex justify-content-center w-100 mt-5 pt-5">
+                <div class="container-header mb-4" style="display: block;">
+                    <span class="section-1-header" style="display: block;">4 ภาพอนาคตทางเลือกของย่านพระโขนง-บางนา<span>
                 </div>
             </div>
+            <div class="px-lg-5 px-0">
+                <div class="row m-0">
+                    <div class="col-lg-6 p-0 pe-lg-4 mb-5 future-container" style=" background-color: transparent;">
+                        <div class="py-3 future-box" style="box-shadow: 0px 4px 20px rgba(97, 205, 245, 0.6); position: relative; overflow: hidden;">
+                            <div style="height: 35vh; display: flex; align-items: center; justify-content: center;">
+                                <img src="/assets/images/future-1.png" width="95%"  alt="">
+                            </div>
+                            <div class="text-center">
+                                <p class="mb-2">ภาพอนาคตฐาน</p>
+                                <h5 >“รถไฟฟ้ามหานะเธอ”</h5>
+                            </div>
+                            <div class="overlay-future d-flex align-items-center justify-content-center">
+                                <p class="m-0 text-center" style="max-width: 65%; font-weight: 400;
+                                font-size: 20px;
+                                line-height: 32px;">ผู้คนผ่านมา ต่างคนต่างทำงาน วุ่นวายในเรื่องของตนเองผ่านไป ไม่ได้พบ ไม่ได้เจอกัน จะมีความรักยังยาก</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 p-0 ps-lg-4 mb-5 future-container"  style="">
+                        <div class="py-3 future-box" style="box-shadow: 0px 4px 20px rgba(97, 205, 245, 0.6); position: relative;overflow: hidden;">
+                            <div style="height: 35vh; display: flex; align-items: center; justify-content: center;">
+                                <img src="/assets/images/future-2.png" width="95%"  alt="">
+                            </div>
+                            <div class="text-center">
+                                <p class="mb-2">ภาพอนาคตฐานทางเลือก</p>
+                                <h5 >“The Wolf of Wall Street ”</h5>
+                            </div>
+                            <div class="overlay-future d-flex align-items-center justify-content-center">
+                                <p class="m-0 text-center" style="max-width: 65%; font-weight: 400;
+                                font-size: 20px;
+                                line-height: 32px;">ถนนกลายเป็นแหล่งรวมของสถาบันทางเศรษฐกิจสำคัญ ดูมีชีวิต ชีวา แต่ตัดขาดกับโลกภายนอก และทำให้ทุกคนมีโอกาสกลายเหยื่อทางเศรษฐกิจ แม้แต่ตัวเอง</p>
+                            </div>
+                       </div>
+                    </div>
+                    <div class="col-lg-6 p-0 pe-lg-4 mb-5 mb-lg-0 future-container" style="">
+                        <div class="py-3 future-box" style="box-shadow: 0px 4px 20px rgba(97, 205, 245, 0.6); position: relative;overflow: hidden;">
+                            <div style="height: 35vh; display: flex; align-items: center; justify-content: center;">
+                                <img src="/assets/images/future-3.png" width="95%" height="100%"  alt="">
+                            </div>
+                            <div class="text-center">
+                                <p class="mb-2">ภาพอนาคตที่แย่ที่สุด</p>
+                                <h5 >“Die Hard 4.0”</h5>
+                            </div>
+                            <div class="overlay-future d-flex align-items-center justify-content-center">
+                                <p class="m-0 text-center" style="max-width: 65%; font-weight: 400;
+                                font-size: 20px;
+                                line-height: 32px;">มีเทคโนโลยีให้ในชีวิตประจำวัน รวมถึงการบริหารเมืองแต่เข้าไม่ถึงคนทุกกลุ่ม ใช้ไม่เป็น ใช้ไม่เกิดประโยชน์สาธารณะจนทำให้ย่านทั้งย่านอยู่ในสภาพไม่ตาย แต่เลี้ยงไม่โต</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 p-0 ps-lg-4 future-container" style="">
+                        <div class="py-3 future-box" style="box-shadow: 0px 4px 20px rgba(97, 205, 245, 0.6); position: relative;overflow: hidden;">
+                            <div style="height: 35vh; display: flex; align-items: center; justify-content: center;">
+                                <img src="/assets/images/future-4.png" width="95%" height="90%"  alt="">
+                            </div>
+                            <div class="text-center">
+                                <p class="mb-2">ภาพอนาคตที่พึงประสงค์</p>
+                                <h5 >“Downtown Cha Cha Cha”</h5>
+                            </div>
+                            <div class="overlay-future d-flex align-items-center justify-content-center">
+                                <p class="m-0 text-center" style="max-width: 65%; font-weight: 400;
+                                font-size: 20px;
+                                line-height: 32px;">พื้นที่กลางที่เปิดให้คนภายในพื้นที่ทำงานร่วมกับคนภายนอกในการยกระดับคุณภาพชีวิตของคนที่อยู่ และสมดุลทรัพยากรในพื้นที่กับองค์ความรู้จากภายนอกผ่านกระบวนการทางสังคม</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+       
     </div>
     <div class="" id="section-talk" style="position: relative; margin-top: 250px;">
-        <div style="height: 100vh; width: 100%; position: sticky; top: 0;">
-            <div style="height: 100%; width: 100%; position: relative;">
-                <img class="img-talk-1" src="/assets/images/talk-1.png" style="position: absolute; width: 100%; height: 100%;" alt="">
-                <img class="img-talk-2" src="/assets/images/talk-2.png" style="position: absolute; width: 100%; height: 100%;" alt="">
-                <img class="img-talk-3" src="/assets/images/talk-3.png" style="position: absolute; width: 100%; height: 100%;" alt="">
-                <img class="img-talk-4" src="/assets/images/talk-4.png" style="position: absolute; width: 100%; height: 100%;" alt="">
-                <img class="img-talk-5" src="/assets/images/talk-5.png" style="position: absolute; width: 100%; height: 100%;" alt="">
+        <div class="container">
+            <div class="talk-sticy-container">
+                <div class="talk-sticy" >
+                    <img class="img-talk-1" src="/assets/images/talk-1.png" style="position: absolute; width: 100%; height: 100%;" alt="">
+                    <img class="img-talk-2" src="/assets/images/talk-2.png" style="position: absolute; width: 100%; height: 100%;" alt="">
+                    <img class="img-talk-3" src="/assets/images/talk-3.png" style="position: absolute; width: 100%; height: 100%;" alt="">
+                    <img class="img-talk-4" src="/assets/images/talk-4.png" style="position: absolute; width: 100%; height: 100%;" alt="">
+                    <img class="img-talk-5" src="/assets/images/talk-5.png" style="position: absolute; width: 100%; height: 100%;" alt="">
+                </div>
             </div>
+            <div class="spacer" id="sec32"></div>
+            <div class="spacer" id="sec33"></div>
+            <div class="spacer" id="sec34"></div>
+            <div class="spacer" id="sec35"></div>
         </div>
-        <div class="spacer" id="sec32"></div>
-        <div class="spacer" id="sec33"></div>
-        <div class="spacer" id="sec34"></div>
-        <div class="spacer" id="sec35"></div>
+        
     </div>
     <div>
         <div class="" id="section-talk-2" style="position: relative;">
-            <div style="height: 100vh; width: 100%; position: sticky; top: 0;">
-                <div style="height: 100%; width: 100%; position: relative;">
-                    <img class="img-talk-2-1" src="/assets/images/talk-2-1.png" style="position: absolute; width: 100%; height: 100%;" alt="">
-                    <img class="img-talk-2-2" src="/assets/images/talk-2-2.png" style="position: absolute; width: 100%; height: 100%;" alt="">
+            <div class="container">
+                <div class="talk-sticy-container-2">
+                    <div class="talk-sticy-2" >
+                        <img class="img-talk-2-1" src="/assets/images/talk-2-1.png" style="position: absolute; width: 100%; height: 100%;" alt="">
+                        <img class="img-talk-2-2" src="/assets/images/talk-2-2.png" style="position: absolute; width: 100%; height: 100%;" alt="">
+                    </div>
                 </div>
+                <div class="spacer" id="sec36"></div>
             </div>
-            <div class="spacer" id="sec36"></div>
         </div>
     </div>
+
+    <div>
+        <div class="container">
+            <div class="container-header mb-4" style="display: block;">
+                <span class="section-1-header" style="display: block;">ยุทธศาสตร์การพัฒนาย่านพระโขนง-บางนา<span>
+            </div>
+            <div class="row m-0">
+                <div class="col-lg-9">
+                    <img src="./assets/images/gif-1.gif" width="100%" alt="gif-1">
+                </div>
+                <div class="col-lg-3">
+                    <div class="section-1-content-header mb-2" style="color: #000;">
+                        3 แกน (เหนือ-ใต้)
+                    </div> 
+                    <ul style="font-size: 20; font-weight: 400; line-height: 31px;">
+                        <li>ถนนสุขุมวิท</li>
+                        <li>ถนนศรีนครินทร์</li>
+                        <li>พื้นที่ริมน้ำเจ้าพระยา</li>
+                    </ul>
+                    <div class="section-1-content-header mb-2" style="color: #000;">
+                        4 แกน (ตะวันออก-ตะวันตก)
+                    </div>
+                    <ul style="font-size: 20; font-weight: 400; line-height: 31px;">
+                        <li>เส้นทางสีเขียวเชื่อมบึงบางกระเจ้า-หนองบอน</li>
+                        <li>คลองบางนา</li>
+                        <li>คลองพระโขนง</li>
+                        <li>ถนนบางนา-ตราด</li>
+                    </ul>
+                    <div class="section-1-content-header mb-2" style="color: #000;">
+                        ยุทธศาสตร์ระยะสั้น
+                    </div> 
+                    <ul style="font-size: 20; font-weight: 400; line-height: 31px;">
+                        1. ฟื้นฟูแกนสุขุมวิท <br>
+                        2. พัฒนาพื้นที่ยุทธศาสตร์ภายในซอย <br>
+                        3. สร้างการเชื่อมต่อด้วยโครงข่าย ทางเดินเท้าที่มีคุณภาพ <br>
+                    </ul>
+                    <div class="section-1-content-header mb-2" style="color: #000;">
+                        ยุทธศาสตร์ระยะกลาง
+                    </div> 
+                    <ul style="font-size: 20; font-weight: 400; line-height: 31px;">
+                        เพิ่มความหนาแน่นอย่างมีคุณภาพบริเวณถนนศรีนครินทร์
+                    </ul>
+                    <div class="section-1-content-header mb-2" style="color: #000;">
+                        ยุทธศาสตร์ระยะยาว
+                    </div> 
+                    <ul style="font-size: 20; font-weight: 400; line-height: 31px;">
+                        พัฒนาพื้นที่ริมน้ำ
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section>
+        <div class="mt-5">
+            <div class="container">
+                <img src="./assets/images/gif-2.gif" width="100%" alt="">
+            </div>
+        </div>
+    </section>
+  
+
+    <section>
+        <div class="mt-5">
+            <div class="container">
+                <div class="d-flex justify-content-center w-100">
+                    <div class="container-header mb-4" style="display: block;">
+                        <span class="section-1-header" style="display: block;">ยุทธศาสตร์การพัฒนาย่านพระโขนง-บางนา<span>
+                    </div>
+                </div>
+                <div class="section-1-content-header text-center mb-2" style="color: #000;">
+                    แนวคิดการพัฒนา
+                </div> 
+                <div class="section-1-content-detail mb-2 text-center">
+                    1. สร้างการเชื่อมต่อบางกระเจ้า-บึงหนองบอน ด้วยทางเดินลอยฟ้าและแกนสีเขียว-คลอง <br>
+                    2. ปรับเปลี่ยนพื้นที่รอการพัฒนาภายในเป็นพื้นที่สาธารณะชุมชน
+                </div>
+                <div class="d-flex justify-content-center w-100 mb-2">
+                    <div class="axis-line"></div>
+                </div>
+                <div class="section-1-content-header text-center mb-2" style="color: #000;">
+                    ถนนสุขุมวิท รอบสถานีปุณณวิถี
+                </div> 
+                <div class="section-1-content-detail mb-2 text-center">
+                    ภาพจำแรกเมื่อมาถึงย่าน
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="container mb-5">
+                <div class="mb-3" style="display: flex; justify-content: center; align-items: center;">
+                    <div style="width:80%;">
+                      <div class="img-comp-container">
+                        <div class="img-comp-img" style="height: 100%;">
+                          <img src="./assets/images/after-1.png" width="100%" height="100%">
+                        </div>
+                        <div class="img-comp-img img-comp-overlay" style="width: 100%; height: 100%;">
+                          <img src="./assets/images/before-1.png" width="" height="100%">
+                        </div>
+                        <div class="text-before">
+                            <div class="section-1-content-header" style="color: #000;">
+                                Before
+                            </div> 
+                        </div>
+                        <div class="text-after">
+                            <div class="section-1-content-header" style="color: #000;">
+                                After
+                            </div> 
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center w-100 mb-2">
+                    <div class="axis-line"></div>
+                </div>
+                <div class="section-1-content-header text-center mb-2" style="color: #000;">
+                    เวิ้งอาคารพาณิชย์ ซอยสุขุมวิท 101/2
+                </div> 
+                <div class="section-1-content-detail mb-2 text-center">
+                    โอกาสในการสร้างพื้นที่แหล่งงานใหม่ของผู้ประกอบการรายย่อย
+                </div>
+                <div class="mb-3" style="display: flex; justify-content: center; align-items: center;">
+                    <div style="width:80%;">
+                      <div class="img-comp-container">
+                        <div class="img-comp-img" style="height: 100%;">
+                          <img src="./assets/images/after-2.png" width="100%" height="100%">
+                        </div>
+                        <div class="img-comp-img img-comp-overlay" style="width: 100%; height: 100%;">
+                          <img src="./assets/images/before-2.png" width="" height="100%">
+                        </div>
+                        <div class="text-before">
+                            <div class="section-1-content-header" style="color: #000;">
+                                Before
+                            </div> 
+                        </div>
+                        <div class="text-after">
+                            <div class="section-1-content-header" style="color: #000;">
+                                After
+                            </div> 
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center w-100 mb-2">
+                    <div class="axis-line"></div>
+                </div>
+                <div class="section-1-content-header text-center mb-2" style="color: #000;">
+                    ซอยลาซาล
+                </div> 
+                <div class="section-1-content-detail mb-2 text-center">
+                    ถนนน่าเดิน
+                </div>
+                <div class="mb-3" style="display: flex; justify-content: center; align-items: center;">
+                    <div style="width:80%;">
+                      <div class="img-comp-container">
+                        <div class="img-comp-img" style="height: 100%;">
+                          <img src="./assets/images/after-3.png" width="100%" height="100%">
+                        </div>
+                        <div class="img-comp-img img-comp-overlay" style="width: 100%; height: 100%;">
+                          <img src="./assets/images/before-3.png" width="" height="100%">
+                        </div>
+                        <div class="text-before">
+                            <div class="section-1-content-header" style="color: #000;">
+                                Before
+                            </div> 
+                        </div>
+                        <div class="text-after">
+                            <div class="section-1-content-header" style="color: #000;">
+                                After
+                            </div> 
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center w-100 mb-2">
+                    <div class="axis-line"></div>
+                </div>
+                <div class="section-1-content-header text-center mb-2" style="color: #000;">
+                    สถานีเรือวัดบางนานอก
+                </div> 
+                <div class="section-1-content-detail mb-2 text-center">
+                    จุดเชื่อมต่อจากย่าน สู่แม่น้ำและบางกระเจ้า
+                </div>
+                <div class="mb-3" style="display: flex; justify-content: center; align-items: center;">
+                    <div style="width:80%;">
+                      <div class="img-comp-container">
+                        <div class="img-comp-img" style="height: 100%;">
+                          <img src="./assets/images/after-4.png" width="100%" height="100%">
+                        </div>
+                        <div class="img-comp-img img-comp-overlay" style="width: 100%; height: 100%;">
+                          <img src="./assets/images/before-4.png" width="" height="100%">
+                        </div>
+                        <div class="text-before">
+                            <div class="section-1-content-header" style="color: #000;">
+                                Before
+                            </div> 
+                        </div>
+                        <div class="text-after">
+                            <div class="section-1-content-header" style="color: #000;">
+                                After
+                            </div> 
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center w-100 mb-2">
+                    <div class="axis-line"></div>
+                </div>
+                <div class="section-1-content-header text-center mb-2" style="color: #000;">
+                    เส้นทางเขียวเชื่อมบางกระเจ้า – บึงหนองบอน
+                </div> 
+                <div class="section-1-content-detail mb-2 text-center">
+                    พื้นที่อเนกประโยชน์
+                </div>
+                <div class="mb-3" style="display: flex; justify-content: center; align-items: center;">
+                    <div style="width:80%;">
+                      <div class="img-comp-container">
+                        <div class="img-comp-img" style="height: 100%;">
+                          <img src="./assets/images/after-5.png" width="100%" height="100%">
+                        </div>
+                        <div class="img-comp-img img-comp-overlay" style="width: 100%; height: 100%;">
+                          <img src="./assets/images/before-5.png" width="" height="100%">
+                        </div>
+                        <div class="text-before">
+                            <div class="section-1-content-header" style="color: #000;">
+                                Before
+                            </div> 
+                        </div>
+                        <div class="text-after">
+                            <div class="section-1-content-header" style="color: #000;">
+                                After
+                            </div> 
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <img src="./assets/images/gif-3.gif" width="100%" alt="">
+    </div>
+    
+    <div class="container">
+        <div class="section-1-content-header text-center mb-2" style="color: #000;">
+            แนวคิดการพัฒนา
+        </div> 
+        <div class="section-1-content-detail mb-2 text-center">
+            6. เชื่อมต่อพื้นที่บางกระเจ้าด้วยแนวแกนสีเขียว-คลอง <br>
+            7. การพัฒนาเส้นทางการท่องเที่ยวทางเรือ <br>
+            8. การพัฒนาเส้นทางท่องเที่ยวริมน้ำบางกระเจ้า <br>
+        </div>
+        <div class="d-flex justify-content-center w-100 mb-2">
+            <div class="axis-line"></div>
+        </div>
+        <div class="section-1-content-header text-center mb-2" style="color: #000;">
+            บริเวณริมโรงกลั่นน้ำมันบางจาก
+        </div> 
+        <div class="section-1-content-detail mb-2 text-center">
+            พื้นที่เรียนรู้และพักผ่อนริมน้ำ
+        </div>
+        <div class="mb-3" style="display: flex; justify-content: center; align-items: center;">
+            <div style="width:80%;">
+              <div class="img-comp-container">
+                <div class="img-comp-img" style="height: 100%;">
+                  <img src="./assets/images/after-6.png" width="100%" height="100%">
+                </div>
+                <div class="img-comp-img img-comp-overlay" style="width: 100%; height: 100%;">
+                  <img src="./assets/images/before-6.png" width="" height="100%">
+                </div>
+                <div class="text-before">
+                    <div class="section-1-content-header" style="color: #000;">
+                        Before
+                    </div> 
+                </div>
+                <div class="text-after">
+                    <div class="section-1-content-header" style="color: #000;">
+                        After
+                    </div> 
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+    <section>
+        <div class="container">
+            <div class="d-flex justify-content-center w-100">
+                <div class="container-header mb-4" style="display: block;">
+                    <span class="section-1-header" style="display: block;">“เดินสร้างเศรษฐกิจย่าน”<span>
+                </div>
+            </div>
+            <div class="section-1-content-detail mb-2 text-center">
+                หากดำเนินการตามแผนยุทธศาสตร์ที่วางไว้จะทำให้เกิดกระจายความมั่งคั่งจากผู้ประกอบการรายใหญ่ สู่รายย่อยด้านใน
+            </div>
+            <div class="mb-3" style="display: flex; justify-content: center; align-items: center;">
+                <div style="width:80%;">
+                  <div class="img-comp-container" style="aspect-ratio: 15/11;">
+                    <div class="img-comp-img" style="height: 100%;">
+                      <img src="./assets/images/after-7.png" width="100%" height="100%">
+                    </div>
+                    <div class="img-comp-img img-comp-overlay" style="width: 100%; height: 100%;">
+                      <img src="./assets/images/before-7.png" width="" height="100%">
+                    </div>  
+                  </div>
+                </div>
+            </div>
+            <div class="section-1-content-detail mb-2 text-center">
+                และนี่คือการเปลี่ยนแปลงที่กำลังจะเกิดขึ้นในย่านพระโขนงบางนา ซึ่งสอดคล้องกับนฌยบายการพัฒนาเมืองกรุงเทพ ภายใต้นโยบาย เก้าด้าน เก้าดี และการพัฒนาก้าวใหม่ ด้วยพระโขนง-บางนา โมเดล
+            </div>
+
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <img src="./assets/images/gif-4.gif" width="100%" alt="">
+        </div>
+    </section>
+
+    <footer class="p-lg-5 px-3 py-5">
+       <div class="d-flex justify-content-between">
+            <div>
+                <div class="group-footer mb-3">
+                    <h5 class="header-footer m-0">
+                        สนับสนุนโดย
+                    </h5>
+                    <p class="m-0 sub-footer">กองทุนพัฒนาสื่อปลอดภัยและสร้างสรรค์</p>
+                </div>
+                <div class="group-footer mb-3">
+                    <h5 class="header-footer m-0">
+                        ดำเนินการโดย
+                    </h5>
+                    <p class="m-0 sub-footer">ศูนย์ออกแบบและพัฒนาเมือง (UDDC) ศูนย์เชี่ยวชาญเฉพาะทางด้านยุทธศาสตร์เมือง จุฬาลงกรณ์มหาวิทยาลัย</p>
+                </div>
+                <div class="group-footer">
+                    <h5 class="header-footer m-0">
+                        ขอขอบคุณข้อมูลจาก
+                    </h5>
+                    <p class="m-0 sub-footer">  
+                        โครงการพระโขนง-บางนา 2040 อนาคต ความฝัน ย่านของเรา <br>
+                        our neighborhoods, our dreams, our futures <br>
+                        โดย ศูนย์ออกแบบและพัฒนาเมือง ศูนย์เชี่ยวชาญเฉพาะทางด้านยุทธศาสตร์เมือง (UDDC-CEUS) ร่วมกับ <br>
+                        ภาควิชาการวางแผนภาคและเมือง คณะสถาปัตยกรรมศาสตร์ จุฬาลงกรณ์มหาวิทยาลัย We!Park / PN-UR / <br>
+                        Local Dialects / User-Friendly และ BUILK ONE GROUP
+                    </p>
+                </div>
+            </div>
+            <div class="d-flex flex-column justify-content-end">
+                <div class="d-flex flex-column flex-lg-row">
+                    <img class="me-4" src="./assets/images/footer-image-1.png" alt="">
+                    <img src="./assets/images/footer-image-2.png" alt="">
+                </div>
+            </div>
+       </div>
+    </footer>
+
   
 
 
@@ -1083,5 +1418,89 @@
         
         
 </script>
+
+<script>
+function initComparisons() {
+  var x, i;
+  /*find all elements with an "overlay" class:*/
+  x = document.getElementsByClassName("img-comp-overlay");
+  for (i = 0; i < x.length; i++) {
+    /*once for each "overlay" element:
+    pass the "overlay" element as a parameter when executing the compareImages function:*/
+    compareImages(x[i]);
+  }
+  function compareImages(img) {
+    var slider, img, clicked = 0, w, h;
+    /*get the width and height of the img element*/
+    w = img.offsetWidth;
+    h = img.offsetHeight;
+    console.log(w,h)
+    /*set the width of the img element to 50%:*/
+    img.style.width = (w / 2) + "px";
+    /*create slider:*/
+    slider = document.createElement("DIV");
+    slider.setAttribute("class", "img-comp-slider");
+    /*insert slider*/
+    img.parentElement.insertBefore(slider, img);
+    /*position the slider in the middle:*/
+    slider.style.top = (h / 2) - (slider.offsetHeight / 2) + "px";
+    slider.style.left = (w / 2) - (slider.offsetWidth / 2) + "px";
+    /*execute a function when the mouse button is pressed:*/
+    slider.addEventListener("mousedown", slideReady);
+    /*and another function when the mouse button is released:*/
+    window.addEventListener("mouseup", slideFinish);
+    /*or touched (for touch screens:*/
+    slider.addEventListener("touchstart", slideReady);
+    /*and released (for touch screens:*/
+    window.addEventListener("touchend", slideFinish);
+    function slideReady(e) {
+      /*prevent any other actions that may occur when moving over the image:*/
+      e.preventDefault();
+      /*the slider is now clicked and ready to move:*/
+      clicked = 1;
+      /*execute a function when the slider is moved:*/
+      window.addEventListener("mousemove", slideMove);
+      window.addEventListener("touchmove", slideMove);
+    }
+    function slideFinish() {
+      /*the slider is no longer clicked:*/
+      clicked = 0;
+    }
+    function slideMove(e) {
+      var pos;
+      /*if the slider is no longer clicked, exit this function:*/
+      if (clicked == 0) return false;
+      /*get the cursor's x position:*/
+      pos = getCursorPos(e)
+      /*prevent the slider from being positioned outside the image:*/
+      if (pos < 0) pos = 0;
+      if (pos > w) pos = w;
+      /*execute a function that will resize the overlay image according to the cursor:*/
+      slide(pos);
+    }
+    function getCursorPos(e) {
+      var a, x = 0;
+      e = (e.changedTouches) ? e.changedTouches[0] : e;
+      /*get the x positions of the image:*/
+      a = img.getBoundingClientRect();
+      /*calculate the cursor's x coordinate, relative to the image:*/
+      x = e.pageX - a.left;
+      /*consider any page scrolling:*/
+      x = x - window.pageXOffset;
+      return x;
+    }
+    function slide(x) {
+      /*resize the image:*/
+      img.style.width = x + "px";
+      /*position the slider:*/
+      slider.style.left = img.offsetWidth - (slider.offsetWidth / 2) + "px";
+    }
+  }
+}
+</script>
+<script>
+    /*Execute a function that will execute an image compare function for each element with the img-comp-overlay class:*/
+    initComparisons();
+    </script>
 </body>
 </html>
