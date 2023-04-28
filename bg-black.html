@@ -1,0 +1,2114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <title></title>
+</head>
+<body style="background-color: black; overflow-x: hidden;">
+
+    <style>
+
+        #super-container{
+            width: 100%; 
+            background-color: black;
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            left: 0;
+      
+        }
+
+        #super-container.super-0 ,#super-container.super-1{
+            position: static;
+            height: 3000px;
+        }
+
+        #main-box{
+            position: relative;
+            height: 100%;
+            width: 100%;
+        }
+
+        .main-content-1{
+            /* background-image: url('./assets/images/bg-black/bg-1.png');
+            background-position: center;
+            background-repeat: no-repeat; */
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+            transition: 0.8s all ease;
+            z-index: 2;
+        }
+
+        .main-content-1-test{
+            background-image: url('./assets/images/bg-black/bg-1.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+            transition: 0.8s all ease; 
+            z-index: 1;
+        }
+
+        #main-box.fadeIn-0 .main-content-1, #main-box.fadeIn-1 .main-content-1{
+            opacity: 1;
+            height:3000px;
+            position: static;
+        }
+
+        #main-box.fadeIn-0  .main-content-1-test,  #main-box.fadeIn-1  .main-content-1-test{
+            opacity: 1;
+        }
+
+        .main-text{
+            font-style: normal;
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 63px;
+            text-align: center;
+            color: #28FF35;
+        }
+        .sub-text{
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 25px;
+            text-align: center;
+            color: #FFFFFF;
+        }
+
+        .sub-content-0{
+            position: absolute;
+            top: 50vh;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            opacity: 0;
+            transition: 0.8s all ease;
+            width: 100%;
+        }
+
+        .sub-content-1{
+            position: absolute;
+            top: 75%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            opacity: 0;
+            transition: 0.8s all ease;
+            width: 100%;
+        }
+
+        #main-box.fadeIn-0 .sub-content-0,#main-box.fadeIn-1 .sub-content-1{
+            opacity: 1;
+        }
+
+        h4.med-text{
+            font-weight: 700;
+            font-size: 30px;
+            line-height: 48px;
+            color: #FFFFFF;
+            text-align: center;
+        }
+
+        .main-content-2,.main-content-3,.main-content-4,.main-content-5{
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+            transition: 0.8s all ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+            transition: 0.8s all ease;
+        }
+
+        #main-box.fadeIn-2  .main-content-2, #main-box.fadeIn-3 .main-content-3,#main-box.fadeIn-4 .main-content-4,#main-box.fadeIn-5 .main-content-5{
+            opacity: 1;
+        }
+
+        .bg-image-container{
+            width: 80%;
+            aspect-ratio: 16/9;
+            position: relative;
+        }
+
+        .content-bottom{
+            position: absolute;
+            bottom: 2%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100%;
+        }
+        .mini-text{
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 19px;
+            letter-spacing: 0em;
+            text-align: center;
+            color: #FFFFFF;
+        }
+                       
+        .base-image-container{
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100vh;
+            flex-direction: column;
+        }
+
+        .base-image-container .base-bg-image-container{
+            width: 65vw;
+            aspect-ratio: 5/3;
+            position: relative;
+        }
+
+        .base-image-container img{
+            position: absolute;
+            height: 100%;
+        }
+
+        .main-content-6,.main-content-7,.main-content-8,.main-content-10{
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+            transition: 0.8s all ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+            transition: 0.8s all ease;
+        }
+
+        .main-content-9{
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+            transition: 0.8s all ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+            transition: 0.8s all ease;
+        }
+
+        .fadeIn-6 .main-content-6,
+        .fadeIn-7 .main-content-6, 
+        .fadeIn-8 .main-content-6,
+        .fadeIn-9 .main-content-6,
+        .fadeIn-10 .main-content-6,
+        .fadeIn-11 .main-content-6,
+        .fadeIn-12 .main-content-6,
+        .fadeIn-13 .main-content-6,
+        .fadeIn-14 .main-content-6,
+        .fadeIn-15 .main-content-6,
+        .fadeIn-16 .main-content-7,
+        .fadeIn-17 .main-content-8,
+        .fadeIn-18 .main-content-9,
+        .fadeIn-19 .main-content-10,
+        .fadeIn-20 .main-content-10,
+        .fadeIn-21 .main-content-10,
+        .fadeIn-22 .main-content-10,
+        .fadeIn-23 .main-content-10,
+        .fadeIn-24 .main-content-10,
+        .fadeIn-25 .main-content-10,
+        .fadeIn-26 .main-content-10{
+            opacity: 1;
+        }
+
+        .base-image-container h5{
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 38px;
+            color: #FFFFFF;
+        }
+
+        .base-image-content-1, 
+        .base-image-content-2,
+        .base-image-content-3,
+        .base-image-content-4,
+        .base-image-content-5,
+        .base-image-content-10{
+            position: absolute;
+            opacity: 0;
+            top: 10vh;
+            left: 10vw;
+            transition: 0.8s all ease;
+        }
+
+        .base-image-container h2{
+            font-style: normal;
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 76px;
+            color: #FB0022;
+            margin: 30px 0;
+        }
+
+        .base-image-container h4{
+            font-style: normal;
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 57px;
+        }
+
+        .base-image-container p {
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 25px;
+            color: #FFFFFF;
+        }
+
+        .base-bg-1,.base-bg-2,.base-bg-3{
+            opacity: 0;
+            transition: 0.8s all ease;
+        }
+
+        .fadeIn-6 .base-image-content-1,
+        .fadeIn-7 .base-image-content-2, 
+        .fadeIn-8 .base-image-content-3,
+        .fadeIn-9 .base-image-content-4,
+        .fadeIn-10 .base-image-content-5{
+            opacity: 1;
+            transition: 0.8s all ease;
+        }
+
+        .fadeIn-7 .base-bg-1,.fadeIn-8 .base-bg-2,.fadeIn-9 .base-bg-3{
+            opacity: 1;
+            transition: 0.8s all ease;
+        }
+
+        .base-image-content-6{
+            position: absolute;
+            opacity: 0;
+            top: 6vh;
+            right: 17vw;
+            transition: 0.8s all ease;
+        }
+
+        .base-image-content-7{
+            position: absolute;
+            opacity: 0;
+            bottom: 3vh;
+            left: 22vw;
+            transition: 0.8s all ease;
+        }
+
+        .base-image-content-8{
+            position: absolute;
+            opacity: 0;
+            bottom: 25vh;
+            right: 23vw;
+            transition: 0.8s all ease;
+        }
+
+        .base-image-content-9{
+            position: absolute;
+            opacity: 0;
+            bottom: 42vh;
+            left: 6vw;
+            transition: 0.8s all ease;
+        }
+
+        .base-image-content-11{
+            position: absolute;
+            opacity: 0;
+            bottom: 10vh;
+            right: 10vw;
+            transition: 0.8s all ease;
+        }
+
+        .fadeIn-11 .base-image-content-6,
+        .fadeIn-12 .base-image-content-6,.fadeIn-12 .base-image-content-7,
+        .fadeIn-13 .base-image-content-6,.fadeIn-13 .base-image-content-7,.fadeIn-13 .base-image-content-8,
+        .fadeIn-14 .base-image-content-6,.fadeIn-14 .base-image-content-7,.fadeIn-14 .base-image-content-8,.fadeIn-14 .base-image-content-9,
+        .fadeIn-15 .base-image-content-10, .fadeIn-15 .base-image-content-11{
+            opacity: 1;
+            transition: 0.8s all ease;
+        }
+
+        .base-bg-image-container.hack img{
+            margin-top: 5vh;
+           height: 50vh;
+        }
+
+        .main-content-10 .base-bg-image-container{
+            width: 55vw;
+        }
+
+        .main-content-10 h4{
+            position: absolute;
+            top: 6vh;
+        }
+
+        .content-step-1,.content-step-2,.content-step-3,.content-step-4,.content-step-5,.content-step-6,.content-step-7{
+            opacity: 0;
+            transition: opacity .8s;
+        }
+
+        .move-step-1,.move-step-2,.move-step-3,.move-step-4,.move-step-5,.move-step-6{
+            opacity: 0;
+            transform: translateY(-100%);
+            transition: opacity .1s, transform .8s;
+        }
+
+        .fadeIn-20 .content-step-1,
+        .fadeIn-21 .content-step-1,.fadeIn-21 .content-step-2,
+        .fadeIn-22 .content-step-1,.fadeIn-22 .content-step-2 ,.fadeIn-22 .content-step-3,
+        .fadeIn-23 .content-step-1,.fadeIn-23 .content-step-2 ,.fadeIn-23 .content-step-3,.fadeIn-23 .content-step-4,
+        .fadeIn-24 .content-step-1,.fadeIn-24 .content-step-2 ,.fadeIn-24 .content-step-3,.fadeIn-24 .content-step-4,.fadeIn-24 .content-step-5,
+        .fadeIn-25 .content-step-1,.fadeIn-25 .content-step-2 ,.fadeIn-25 .content-step-3,.fadeIn-25 .content-step-4,.fadeIn-25 .content-step-5,.fadeIn-25 .content-step-6,
+        .fadeIn-26 .content-step-1,.fadeIn-26 .content-step-2 ,.fadeIn-26 .content-step-3,.fadeIn-26 .content-step-4,.fadeIn-26 .content-step-5,.fadeIn-26 .content-step-6,.fadeIn-26 .content-step-7{
+            opacity: 1;
+        }
+
+        .fadeIn-20 .move-step-1,
+        .fadeIn-21 .move-step-1,.fadeIn-21 .move-step-2,
+        .fadeIn-22 .move-step-1,.fadeIn-22 .move-step-2 ,.fadeIn-22 .move-step-3,
+        .fadeIn-23 .move-step-1,.fadeIn-23 .move-step-2 ,.fadeIn-23 .move-step-3,.fadeIn-23 .move-step-4,
+        .fadeIn-24 .move-step-1,.fadeIn-24 .move-step-2 ,.fadeIn-24 .move-step-3,.fadeIn-24 .move-step-4,.fadeIn-24 .move-step-5,
+        .fadeIn-25 .move-step-1,.fadeIn-25 .move-step-2 ,.fadeIn-25 .move-step-3,.fadeIn-25 .move-step-4,.fadeIn-25 .move-step-5,.fadeIn-25 .move-step-6,
+        .fadeIn-26 .move-step-1,.fadeIn-26 .move-step-2 ,.fadeIn-26 .move-step-3,.fadeIn-26 .move-step-4,.fadeIn-26 .move-step-5,.fadeIn-26 .move-step-6{
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .step-end-content{
+            position: absolute;
+            bottom: 5vh;
+            opacity: 0;
+            transition: opacity .8s;
+        }
+
+        .fadeIn-26 .step-end-content{
+            opacity: 1;
+        }
+
+        .main-content-11,.main-content-12,.main-content-13,.main-content-14,.main-content-15{
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+            transition: 0.8s all ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+            transition: 0.8s all ease;
+        }
+        
+
+
+        .fadeIn-27 .main-content-11,
+        .fadeIn-28 .main-content-11,
+        .fadeIn-29 .main-content-11,
+        .fadeIn-30 .main-content-11,
+        .fadeIn-31 .main-content-11,
+        .fadeIn-32 .main-content-11,
+        .fadeIn-33 .main-content-12,
+        .fadeIn-34 .main-content-13,
+        .fadeIn-35 .main-content-14,
+        .fadeIn-36 .main-content-14,
+        .fadeIn-37 .main-content-14,
+        .fadeIn-38 .main-content-15{
+            opacity: 1;
+        }
+
+        .base-bg-2-1, .base-bg-2-2, .base-bg-2-3,.base-bg-2-4,.base-bg-2-5{
+            opacity: 0;
+            transition: 0.8s all ease;
+        }
+
+        .fadeIn-27 .main-content-11 .base-bg-2-1,
+        .fadeIn-28 .main-content-11 .base-bg-2-2,
+        .fadeIn-29 .main-content-11 .base-bg-2-3,
+        .fadeIn-30 .main-content-11 .base-bg-2-4,
+        .fadeIn-31 .main-content-11 .base-bg-2-5,
+        .fadeIn-32 .main-content-11 .base-bg-2-5{
+            opacity: 1;
+        }
+
+        .base-image-content-2-1,.base-image-content-2-3,.base-image-content-2-5,.base-image-content-2-7,.base-image-content-2-9,.base-image-content-2-11{
+            position: absolute;
+            opacity: 0;
+            top: 10vh;
+            left: 10vw;
+            transition: 0.8s all ease;
+            width: 65vw;
+            aspect-ratio: 5/3;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .base-image-content-2-2,.base-image-content-2-4,.base-image-content-2-6,.base-image-content-2-8,.base-image-content-2-10,.base-image-content-2-12{
+            position: absolute;
+            opacity: 0;
+            top: 10vh;
+            right: -37vw;
+            transition: 0.8s all ease;
+            width: 65vw;
+            aspect-ratio: 5/3;
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+        }
+
+        .fadeIn-27 .base-image-content-2-1,.fadeIn-27 .base-image-content-2-2,
+        .fadeIn-28 .base-image-content-2-3,.fadeIn-28 .base-image-content-2-4,
+        .fadeIn-29 .base-image-content-2-5,.fadeIn-29 .base-image-content-2-6,
+        .fadeIn-30 .base-image-content-2-7,.fadeIn-30 .base-image-content-2-8,
+        .fadeIn-31 .base-image-content-2-9,.fadeIn-31 .base-image-content-2-10,
+        .fadeIn-32 .base-image-content-2-11,.fadeIn-32 .base-image-content-2-12{
+            opacity: 1;
+        }
+
+        img.ratio-img{
+            width: 12vw;
+            height: auto;
+            position: relative;
+        }
+
+        .main-content-13 .base-bg-image-container.hack img{
+            margin-top: 5vh;
+            height: 55vh;
+        }
+
+        .base-image-content-3-1{
+            position: absolute;
+            opacity: 0;
+            top: 10vh;
+            left: 10vw;
+            transition: 0.8s all ease;
+            width: 70vw;
+            aspect-ratio: 5/3;
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+        }
+
+        .base-image-content-3-2{
+            position: absolute;
+            opacity: 0;
+            transition: 0.8s all ease;
+            bottom: 7vh;
+            right: 8vw;
+            aspect-ratio: 5/3;
+        }
+
+        .fadeIn-34  .base-image-content-3-1,.fadeIn-34  .base-image-content-3-2{
+            opacity: 1;
+        }
+
+       .base-bg-3-1,.base-bg-3-2,.base-bg-3-3{
+            opacity: 0;
+            transition: 0.8s all ease;
+        }
+
+        .base-image-content-4-1,.base-image-content-4-3,.base-image-content-4-5{
+            position: absolute;
+            opacity: 0;
+            top: 20vh;
+            left: 10vw;
+            transition: 0.8s all ease;
+        }
+
+        .base-image-content-4-2, .base-image-content-4-4,.base-image-content-4-6{
+            position: absolute;
+            opacity: 0;
+            bottom:13vh;
+            left: 72vw;
+            transition: 0.8s all ease;
+        }
+
+        .sub-content-3,.sub-content-4,.sub-content-5{
+            display: none;
+        }
+
+
+        .fadeIn-35 .base-bg-3-1,
+        .fadeIn-36 .base-bg-3-2,
+        .fadeIn-37 .base-bg-3-3{
+            opacity: 1;
+        }
+
+        .fadeIn-35 .base-image-content-4-1, .fadeIn-35 .base-image-content-4-2,
+        .fadeIn-36 .base-image-content-4-3,.fadeIn-36 .base-image-content-4-4,
+        .fadeIn-37 .base-image-content-4-5,.fadeIn-37 .base-image-content-4-6{
+            opacity: 1;
+        }
+
+        .fadeIn-35 .sub-content-3,
+        .fadeIn-36 .sub-content-4,
+        .fadeIn-37 .sub-content-5{
+            display: block;
+        }
+
+
+        .main-content-16, .main-content-17,.main-content-18,.main-content-19{
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+            transition: 0.8s all ease;
+            width: 100%;
+            height: 100%;
+        }
+
+        .fadeIn-39 .main-content-16,
+        .fadeIn-40 .main-content-16,
+        .fadeIn-41 .main-content-16,
+        .fadeIn-42 .main-content-16,
+        .fadeIn-43 .main-content-16,
+        .fadeIn-44 .main-content-16,
+        .fadeIn-45 .main-content-16,
+        .fadeIn-46 .main-content-17,
+        .fadeIn-47 .main-content-18,
+        .fadeIn-48 .main-content-19{
+            opacity: 1;
+        }
+
+        .main-content-16 .row{
+            position: relative;
+        }
+
+        .main-content-16 .row .col-8{
+            width: 70% !important;
+            aspect-ratio: 16/9;
+            position: relative;
+        }
+
+        .header-content-5-1,.header-content-5-2{
+            position: absolute; 
+            top: 5vh;
+            left: 2vw;
+            opacity: 0;
+            transition: 0.8s all ease;
+        }
+
+        .header-content-5-3,.header-content-5-4,.header-content-5-5,.header-content-5-6,.header-content-5-7{
+            position: absolute; 
+            top: 2vh;
+            left: 2vw;
+            opacity: 0;
+            transition: 0.8s all ease;
+        }
+
+        .fadeIn-39 .header-content-5-1,
+        .fadeIn-40 .header-content-5-2,
+        .fadeIn-41 .header-content-5-3,
+        .fadeIn-42 .header-content-5-4,
+        .fadeIn-43 .header-content-5-5,
+        .fadeIn-44 .header-content-5-6,
+        .fadeIn-45 .header-content-5-7{
+            opacity: 1;
+        }
+
+        section .row .col-8{
+            width: 70% !important;
+        }
+
+        section .row .col-4{
+            padding-left: 5vw;
+            width: 30%;
+        }
+
+        section p {
+            color: rgba(255, 255, 255, 0.25);
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 25px;
+        }
+        
+        section h3{
+            font-style: normal;
+            font-weight: 700;
+            font-size: 32px;
+            color: rgba(255, 255, 255, 0.25);
+        }
+
+        section h5{
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            color: rgba(255, 255, 255, 0.25);
+        }
+
+        .on-40 .section-40  p,
+        .on-41 .section-41  p,
+        .on-42 .section-42  p,
+        .on-43 .section-43  p,
+        .on-44 .section-44  p,.on-44 .section-44  h5,
+        .on-45 .section-45  p,.on-45 .section-45  h5{
+            color: white;
+        }
+
+        .on-44 .section-44  h3,.on-45 .section-45  h3{
+            color: #28FF35;
+        }
+
+        .base-bg-5-1,.base-bg-5-2,.base-bg-5-3,.base-bg-5-4,.base-bg-5-5,.base-bg-5-6{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transition: 0.8s all ease;
+        }
+
+        .fadeIn-40 .base-bg-5-1,
+        .fadeIn-41 .base-bg-5-1,.fadeIn-41 .base-bg-5-2,
+        .fadeIn-42 .base-bg-5-1,.fadeIn-42 .base-bg-5-2,.fadeIn-42 .base-bg-5-3,
+        .fadeIn-43 .base-bg-5-1,.fadeIn-43 .base-bg-5-2,.fadeIn-43 .base-bg-5-3,.fadeIn-43 .base-bg-5-4,
+        .fadeIn-44 .base-bg-5-1,.fadeIn-44 .base-bg-5-2,.fadeIn-44 .base-bg-5-3,.fadeIn-44 .base-bg-5-4,.fadeIn-44 .base-bg-5-5,
+        .fadeIn-45 .base-bg-5-6{
+            opacity: 1;
+        }
+
+        .on-46,.on-47{
+            z-index: -1;
+        }
+
+        .base-bg-image-container .img-comp-img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .base-image-container .img-comp-overlay img{
+            width: auto !important;
+        }
+
+        .base-image-content-5-1,.base-image-content-5-2{
+            position: absolute;
+            opacity: 0;
+            top: 10vh;
+            left: 10vw;
+            transition: 0.8s all ease;
+            width: 70vw;
+            aspect-ratio: 5/3;
+        }
+
+        .fadeIn-46 .base-image-content-5-1,
+        .fadeIn-47 .base-image-content-5-2{
+            opacity: 1;
+        }
+
+    </style>
+        <div
+        id="super-container"
+        >
+            <div id="main-box">
+                <div class="main-content-1-test">
+
+                </div>
+                <div class="main-content-1">
+                    <div class="sub-content-0">
+                        <h2 class="main-text">เมื่อกรุงเทพมหานครจะเป็นเมืองสีเขียว 15 นาที</h2>
+                        <p class="sub-text">เมือง 15 นาที ไม่ใช่เพียงวาทะกรรมทางการเมือง หากแต่เป็นนโยบายที่เมืองหลายเเห่งทั่วโลก กำลังกล่าวถึง ว่าด้วย <br>
+                            “เมืองที่ใช้เวลาในการเดินทาง 15 นาที สู่จุดหมายปลายทางในชีวิตประจำวัน”</p>
+                    </div>
+                    <div class="sub-content-1">
+                        <h4 class="med-text">
+                            แล้วกรุงเทพมหานครจะเป็นเมืองสีเขียว 15 นาที ได้จริงหรือ
+                        </h4>
+                    </div>
+                </div>
+                <div class="main-content-2">
+                    <div class="bg-image-container">
+                        <img src="./assets/images/bg-black/bg-2.png" width="100%" height="100%" alt="">
+                        <div class="content-bottom">
+                            <p class="sub-text m-0">หากพูดถึงพื้นที่สีเขียวในเมือง ไม่เพียงแค่เป็น “สีเขียว” ของเมืองเท่านั้น หากแต่ คือ…</p>
+                            <h4 class="med-text m-0">พื้นที่ส่งเสริมสุขภาวะของประชาชน</h4>
+                            <p class="mini-text m-0">สวนวชิรเบญจทัศ (สวนรถไฟ)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-content-3">
+                    <div class="bg-image-container">
+                        <img src="./assets/images/bg-black/bg-3.png" width="100%" height="100%" alt="">
+                        <div class="content-bottom">
+                            <p class="sub-text m-0">หากพูดถึงพื้นที่สีเขียวในเมือง ไม่เพียงแค่เป็น “สีเขียว” ของเมืองเท่านั้น หากแต่ คือ…</p>
+                            <h4 class="med-text m-0">พื้นที่ส่งเสริมระบบนิเวศน์เมืองและการเรียนรู้</h4>
+                            <p class="mini-text m-0">สวนป่าเบญจกิติ</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-content-4">
+                    <div class="bg-image-container">
+                        <img src="./assets/images/bg-black/bg-4.png" width="100%" height="100%" alt="">
+                        <div class="content-bottom">
+                            <p class="sub-text m-0">หากพูดถึงพื้นที่สีเขียวในเมือง ไม่เพียงแค่เป็น “สีเขียว” ของเมืองเท่านั้น หากแต่ คือ…</p>
+                            <h4 class="med-text m-0">พื้นที่ส่งเสริมความสัมพันธ์ทางสังคมและความมั่นคงปลอดภัยทางอาหาร</h4>
+                            <p class="mini-text m-0">พื้นที่เกษตรชุมชน</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-content-5">
+                    <div class="bg-image-container">
+                        <img src="./assets/images/bg-black/bg-5.png" width="100%" height="100%" alt="">
+                        <div class="content-bottom">
+                            <p class="sub-text m-0">หากพูดถึงพื้นที่สีเขียวในเมือง ไม่เพียงแค่เป็น “สีเขียว” ของเมืองเท่านั้น หากแต่ คือ…</p>
+                            <h4 class="med-text m-0">พื้นที่ส่งเสริมศักยภาพของผู้คนในช่วงวิกฤต</h4>
+                            <p class="mini-text m-0">สวนสาธารณะ</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-content-6">
+                    <div class="base-image-container">
+                        <div class="base-bg-image-container">
+                            <img src="./assets/images/bg-black/base-bg.png" width="100%" height="100%" alt="">
+                            <img class="base-bg-1" src="./assets/images/bg-black/base-bg-1.png" width="100%" height="100%" alt="">
+                            <img class="base-bg-2" src="./assets/images/bg-black/base-bg-2.png" width="100%" height="100%" alt="">
+                            <img class="base-bg-3" src="./assets/images/bg-black/base-bg-3.png" width="100%" height="100%" alt="">
+                        </div>
+                        <div class="base-image-content-1">
+                            <h5>ปัจจุบัน <br> 
+                                กรุงเทพมหานครเป็นเมืองที่ …
+                            </h5>
+                        </div>
+                        <div class="base-image-content-2">
+                            <h5>ปัจจุบัน <br> 
+                                กรุงเทพมหานครเป็นเมืองที่ …
+                            </h5>
+                            <h2>
+                                เขียวน้อย
+                            </h2>
+                            <p>กรุงเทพฯ เป็นเมืองเขียวน้อย <br>
+                                มีพื้นที่สีเขียวเฉลี่ยอยู่ที่</p>
+                            <div class="d-flex align-items-end mt-4">
+                                <h2 class="m-0" style="color: white;">7.60</h1><p>ตารางเมตรต่อคน</p>
+                            </div>
+                        </div>
+                        <div class="base-image-content-3">
+                            <h5>ปัจจุบัน <br> 
+                                กรุงเทพมหานครเป็นเมืองที่ …
+                            </h5>
+                            <h2>
+                                เขียวไกล
+                            </h2>
+                            <p>กรุงเทพฯ เป็นเมืองเขียวไกล <br>
+                                ระยะทางเฉลี่ยในการเข้าถึง <br>
+                                พื้นที่สีเขียวที่ใกล้ที่สุดคือ  <br>
+                                60 นาที หรือประมาณ</p>
+                            <div class="d-flex align-items-end mt-4"> 
+                                <h2 class="m-0" style="color: white;">4.5</h1><p>กิโลเมตร</p>
+                            </div>
+                        </div>
+                        <div class="base-image-content-4">
+                            <h5>ปัจจุบัน <br> 
+                                กรุงเทพมหานครเป็นเมืองที่ …
+                            </h5>
+                            <h2>
+                                หนาแน่น
+                            </h2>
+                            <p>กรุงเทพฯ เป็นเมืองหนาแน่น <br>
+                                พื้นที่เมืองชั้นในและเมืองชั้นกลาง <br>
+                                มีจำนวนประชากรที่หนาแน่น <br>
+                                มีที่ดินจำกัด เนื่องจาก <br>
+                                เป็นพื้นที่อยู่อาศัยของผู้คนในเมือง</p>
+                        </div>
+                        <div class="base-image-content-5">     
+                            <h5>ด้วยสถานการณ์ <br> 
+                                ด้านพื้นที่สีเขียวของเมืองเช่นนี้
+                                <span style="color: #FB0022; display: block;">
+                                    คำถามสำคัญก็คือจะทำอย่างไรให้ <br>
+                                    สวน 15 นาทีนี้ เกิดขึ้นจริงได้
+                                </span>
+                            </h5>
+                        </div>
+                        <div class="base-image-content-6">     
+                            <h4>
+                                <span style="color: #FB0022; display: block;">
+                                    จะเอาที่ดินมาได้อย่างไร ?
+                                </span>
+                            </h4>
+                        </div>
+                        <div class="base-image-content-7">     
+                            <h4>
+                                <span style="color: #FB0022; display: block;">
+                                    จะเอางบประมาณมาจากไหน ?
+                                </span>
+                            </h4>
+                        </div>
+                        <div class="base-image-content-8">     
+                            <h5>
+                                <span style="color: #FB0022; display: block;">
+                                    จะต้องใช้งบประมาณเท่าไหร่ ?
+                                </span>
+                            </h5>
+                        </div>
+                        <div class="base-image-content-9">     
+                            <h5>
+                                <span style="color: #FB0022; display: block;">
+                                    จะต้องใช้งบประมาณเท่าไหร่ ?
+                                </span>
+                            </h5>
+                        </div>
+                        <div class="base-image-content-10">     
+                            <h5>
+                                ด้วยสถานการณ์ <br>
+                                ด้านพื้นที่สีเขียวของเมืองเช่นนี้ <br>
+                                คำถามสำคัญก็คือจะทำอย่างไรให้ <br>
+                                สวน 15 นาทีนี้ เกิดขึ้นจริงได้ <br>
+                            </h5>
+                        </div>
+                        <div class="base-image-content-11">     
+                            <p class="text-end" style="font-weight: 400;">
+                                ยิ่งไปกว่านั้น กรุงเทพมหานคร <br>
+                                ยังเต็มไปด้วยข้อจำกัดเรื่องอำนาจ<br>
+                                และมาตรการต่าง ๆ รวมถึง<br>
+                                มาตรการทางภาษี ซึ่งเป็นความท้าทายของ<br>
+                                การพัฒนาสวน 15 นาที ในพื้นที่เมืองที่มีราคาที่ดินสูง<br>
+                                <br>
+                                ลำพังเพียงมาตรการทางภาษีอย่างเดียว<br>
+                                ไม่สามรถสร้างเเรงจูงใจได้มากพอที่จะทำให้มีการพัฒนา <br>
+                                หรือยกที่ดินของเอกชนในการพัฒนา<br>
+                                เป็นพื้นที่สีเขียวสาธารณะของเมืองได้<br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-content-7">
+                    <div class="base-image-container">
+                        <div class="base-bg-image-container">
+                            <img src="./assets/images/bg-black/bg-6.png" width="100%" height="100%" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="main-content-8">
+                    <div class="base-image-container">
+                       <h5 style="font-style: normal;
+                       font-weight: 700;
+                       font-size: 30px;
+                       line-height: 48px;               
+                       text-align: center;
+                       color: #FFFFFF;">
+                            แฮค! หาวิธีให้คนกรุงเทพฯ เข้าถึงพื้นที่สีเขียวใน 15 นาที
+                        </h5>
+                    </div> 
+                </div>
+                <div class="main-content-9">
+                    <div class="base-image-container">
+                        <div class="base-bg-image-container hack">
+                            <div class="d-flex">
+                                <h1 style="
+                                font-weight: 700;
+                                font-size: 64px;
+                                line-height: 102px;
+                                color: #28FF35;"
+                                
+                                class="me-5">“แฮค”<span style="font-size: 30px; line-height: 47px;">เพื่อ … </span></h1>
+                                <p class="mt-5">สร้างทางเลือกใหม่ ลดขั้นตอนการดำเนินการแบบเดิม ๆ <br>
+                                    หรือเพื่อเพิ่มประสิทธิภาพการทำงาน สู่โอกาสในการสำเร็จและเกิดขึ้นจริง <br>
+                                    การแฮคในครั้งนี้ จึงไม่จำกัดเพียงการออกแบบโดยกลุ่มสถาปนิกเท่านั้น  <br>
+                                    แต่ต้องการความรู้ ความเชี่ยวชาญจากหลากหลายศาสตร์ไม่ว่าจะเป็นมาตรการทางผังเมือง <br>
+                                    มาตรการทางกฎหมาย หรือมาตรการทางเศรษฐศาสตร์</p>
+                            </div>
+                            <img src="./assets/images/bg-black/base-gif.gif" width="100%" alt="">
+                        </div>
+                    </div> 
+                </div>
+                <div class="main-content-10">
+                    <div class="base-image-container">
+                        <h4 style="color: #28FF35;">บันได 6 ขั้น ของการได้มาซึ่งสวน 15 นาที</h4>
+                        <div class="base-bg-image-container">
+                            <img src="./assets/images/bg-black/base-step.png" width="100%" height="100%" alt="">
+                            <img class="content-step-1" src="./assets/images/bg-black/content-step-1.png" alt="">
+                            <img class="move-step-1" src="./assets/images/bg-black/move-step-1.png" alt="">
+                            <img class="content-step-2" src="./assets/images/bg-black/content-step-2.png" alt="">
+                            <img class="move-step-2" src="./assets/images/bg-black/move-step-2.png" alt="">
+                            <img class="content-step-3" src="./assets/images/bg-black/content-step-3.png" alt="">
+                            <img class="move-step-3" src="./assets/images/bg-black/move-step-3.png" alt="">
+                            <img class="content-step-4" src="./assets/images/bg-black/content-step-4.png" alt="">
+                            <img class="move-step-4" src="./assets/images/bg-black/move-step-4.png" alt="">
+                            <img class="content-step-5" src="./assets/images/bg-black/content-step-5.png" alt="">
+                            <img class="move-step-5" src="./assets/images/bg-black/move-step-5.png" alt="">
+                            <img class="content-step-6" src="./assets/images/bg-black/content-step-6.png" alt="">
+                            <img class="move-step-6" src="./assets/images/bg-black/move-step-6.png" alt="">
+                            <img class="content-step-7" src="./assets/images/bg-black/content-step-7.png" alt="">
+                        </div>
+                        <div class="step-end-content">
+                            <p class="text-end m-0" style="color: #28FF35;">ซึ่งตลอดทั้ง 6 ขั้นตอนนี้จะดำเนินการผ่าน</p>
+                            <h5 class="text-end" style="color:#28FF35">การสร้างความร่วมมือของทุกภาคส่วนในรูปแบบ 4Ps Public Private People Partnerships</h5>
+                        </div>
+                    </div> 
+                </div>
+                <div class="main-content-11">
+                    <div class="base-image-container">
+                        <div class="base-bg-image-container">
+                            <img src="./assets/images/bg-black/base-bg-main-2.png" width="100%" height="100%" alt="">
+                            <img class="base-bg-2-1" src="./assets/images/bg-black/base-bg-2-1.png" width="100%" height="100%" alt="">
+                            <img class="base-bg-2-2" src="./assets/images/bg-black/base-bg-2-2.png" width="100%" height="100%" alt="">
+                            <img class="base-bg-2-3" src="./assets/images/bg-black/base-bg-2-3.png" width="100%" height="100%" alt="">
+                            <img class="base-bg-2-4" src="./assets/images/bg-black/base-bg-2-4.png" width="100%" height="100%" alt="">
+                            <img class="base-bg-2-5" src="./assets/images/bg-black/base-bg-2-5.png" width="100%" height="100%" alt="">
+                        </div>
+                        <div class="base-image-content-2-1">
+                            <div>
+                                <h5 class="mb-4">กรุงเทพในปัจจุบัน</h5>
+                                <p>มาลองดูความเป็นไปได้ในการเพิ่มพื้นที่สีเขียวให้กรุงเทพฯ <br>
+                                    เป็นเมืองสีเขียว 15 นาที เดิมกรุงเทพฯ มีพื้นที่สีเขียว <br>
+                                    ประมาณ 5.23 ตารางเมตรต่อคน
+                                </p>
+                            </div>
+                            <div>
+                                <h5 style="color: #28FF35;">
+                                    พื้นที่สวน 7 ประเภท
+                                </h5>
+                            </div>
+                        </div>
+
+                        <div class="base-image-content-2-2">
+                            <h2 style="color: #28FF35; margin: 0;">
+                                5.23
+                            </h2>
+                            <h5 style="color: #28FF35;">
+                                ตร.ม. ต่อคน
+                            </h5>
+                        </div>
+                        <div class="base-image-content-2-3">
+                            <div>
+                                <h5 class="mb-4">ขั้นที่ 1</h5>
+                                <p class="mb-4">หากกรุงเทพฯ จะพัฒนาพื้นที่สีเขียวให้ได้มาตรฐาน <br>
+                                WORLD HEALTH ORGANIZATION  <br>
+                                STANDARD
+                                </p>
+                                <p style="font-weight: 400;
+                                font-size: 14px;
+                                line-height: 22px;
+                                color: #FFFFFF;">
+                                    ประมาณ 8.90 ตารางเมตรต่อคน <br>
+                                    จะต้องดำเนินการปรับเปลี่ยน
+                                </p>
+
+                            </div>
+                            <div>
+                                <h5 style="color: #28FF35;">
+                                    พื้นที่ใต้ทางด่วน <br>
+                                    พื้นที่โล่งว่างตามผังเมืองรวม <br>
+                                    พื้นที่สวน 7 ประเภท
+                                </h5>
+                            </div>
+                        </div>
+                        <div class="base-image-content-2-4">
+                            <h5 class="m-0">เทียบเท่ากับ</h5>
+                            <h2 class="m-0" style="color: white; margin: 0;">
+                                WHO
+                            </h2>
+                            <h5 class="m-0" style="color: #28FF35;">
+                                8.90
+                            </h5>
+                            <h5 class="m-0" style="color: #28FF35;">
+                                ตร.ม. ต่อคน
+                            </h5>
+                        </div>
+                        <div class="base-image-content-2-5">
+                            <div>
+                                <h5 class="mb-4">ขั้นที่ 2</h5>
+                                <p class="mb-4">หากกรุงเทพฯ <br> จะพัฒนาพื้นที่สีเขียวให้ได้มากขึ้นเทียบเท่ากับกรุงปารีส
+                                </p>
+                                <p style="font-weight: 400;
+                                font-size: 14px;
+                                line-height: 22px;
+                                color: #FFFFFF;">
+                                   ประมาณ 13.40 ตารางเมตรต่อคน <br>
+                                   จะต้องดำเนินการปรับเปลี่ยน
+                                </p>
+
+                            </div>
+                            <div>
+                                <h5 style="color: #28FF35;">
+                                    พื้นที่วัด สถานที่ราชการ <br>
+                                    พื้นที่สนามกอล์ฟ พื้นที่ทหาร <br>
+                                    พื้นที่ใต้ทางด่วน <br>
+                                    พื้นที่โล่งว่างตามผังเมืองรวม <br>
+                                    พื้นที่สวน 7 ประเภท
+                                </h5>
+                            </div>
+                        </div>
+                        <div class="base-image-content-2-6">
+                            <h5 class="m-0">เทียบเท่ากับ</h5>
+                            <h2 class="m-0" style="color: white; margin: 0;">
+                                กรุงปารีส
+                            </h2>
+                            <h5 class="m-0" style="color: #28FF35;">
+                                13.40
+                            </h5>
+                            <h5 class="m-0" style="color: #28FF35;">
+                                ตร.ม. ต่อคน
+                            </h5>
+                        </div>
+
+                        <div class="base-image-content-2-7">
+                            <div>
+                                <h5 class="mb-4">ขั้นที่ 2</h5>
+                                <p class="mb-4">หากเพิ่มพื้นที่ริมถนนสายหลัก/สายประธาน  <br> 
+                                    ตามมาตราการทางผังเมืองที่กำหนดพื้นที่ถอยร่น <br>
+                                    ตามแนวถนนเป็นพื้นที่สีเขียวและปรับเปลี่ยนพื้นที่หลังคา <br>
+                                    อาคารขนาดใหญ่จากพื้นที่ดาดแข็งให้กลายเป็นพื้นที่สีเขียว <br>
+                                    บนหลังคา ดังเช่นนโยบายของหลายเมือง <br>
+                                    ที่ดำเนินการอยู่ในปัจจุบัน
+                                </p>
+                                <p style="font-weight: 400;
+                                font-size: 14px;
+                                line-height: 22px;
+                                color: #FFFFFF;">
+                                  ประมาณ 18.90 ตารางเมตรต่อคน <br>
+                                  จะต้องดำเนินการปรับเปลี่ยน
+                                </p>
+
+                            </div>
+                            <div>
+                                <h5 style="color: #28FF35;">
+                                    พื้นที่ริมถนนสายประธาน-รอง <br>
+                                    พื้นที่สวนหลังคาอาคารขนาดใหญ่ <br>
+                                    <span style="color: white;">พื้นที่วัด สถานที่ราชการ</span> <br>
+                                    <span style="color: white;">พื้นที่สนามกอล์ฟ พื้นที่ทหาร</span> <br>
+                                    <span style="color: white;">พื้นที่ใต้ทางด่วน</span> <br>
+                                    <span style="color: white;">พื้นที่โล่งว่างตามผังเมืองรวม</span> <br>
+                                    <span style="color: white;">พื้นที่สวน 7 ประเภท</span>
+                                </h5>
+                            </div>
+                        </div>
+                        <div class="base-image-content-2-8">
+                            <h5 class="m-0">เทียบเท่ากับ</h5>
+                            <h2 class="m-0" style="color: white; margin: 0;">
+                                กรุงลอนดอน
+                            </h2>
+                            <h5 class="m-0" style="color: #28FF35;">
+                                18.90
+                            </h5>
+                            <h5 class="m-0" style="color: #28FF35;">
+                                ตร.ม. ต่อคน
+                            </h5>
+                        </div>
+                        <div class="base-image-content-2-9">
+                            <div>
+                                <h5 class="mb-4">แต่ที่น่าเศร้าก็คือ …</h5>
+                                <p style="font-weight: 400;
+                                font-size: 14px;
+                                line-height: 22px;
+                                color: #FFFFFF;">
+                               เเม้ว่าเราจะพยายามถึงขนาดนี้แล้ว <br>
+                               พื้นที่สวนสาธารณะสีเขียวในเมือง <br>
+                               อยู่ในระยะที่เข้าถึงเฉลี่ยเพียง 60 นาทีเท่านั้น <br>
+                                </p>
+
+                            </div>
+                        </div>
+                        <div class="base-image-content-2-10">
+                            <h5 class="m-0">ขอบเขตบริการของ</h5>
+                            <h2 class="m-0" style="color: white; margin: 0;">
+                                สวนสาธารณะ
+                            </h2>
+                            <h2 class="m-0" style="color: #FB0022;">
+                                4.5 กิโลเมตร
+                            </h2>
+                            <img class="ratio-img" src="./assets/images/bg-black/base-bg-sub-2-5.png" alt="">
+                        </div>
+                        <div class="base-image-content-2-11">
+                            <div>
+                                <h5 class="mb-4">หากพัฒนาตามยุทธศาสตร์ระดับเมือง</h5>
+                                <p style="font-weight: 400;
+                                font-size: 14px;
+                                line-height: 22px;
+                                color: #FFFFFF;">
+                              ค่าเฉลี่ยการเข้าถึงพื้นที่สวนสาธารณะที่ใกล้ที่สุดของ <br>
+                              คนกรุงเทพฯ จะอยู่ในระยะที่เข้าถึงเฉลี่ย 30 นาที
+                                </p>
+
+                            </div>
+                        </div>
+                        <div class="base-image-content-2-12">
+                            <h5 class="m-0">ขอบเขตบริการของ</h5>
+                            <h2 class="m-0" style="color: white; margin: 0;">
+                                สวนสาธารณะ
+                            </h2>
+                            <h2 class="m-0" style="color: #28FF35;">
+                                2.5 กิโลเมตร
+                            </h2>
+                            <img class="ratio-img" src="./assets/images/bg-black/base-bg-sub-2-5.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="main-content-12">
+                    <div class="base-image-container">
+                        <div class="base-bg-image-container d-flex flex-column justify-content-center">
+                            <h4 class="text-center" style="color: white;">ผลลัพธ์ของ GREENER BANGKOK HACKATHON 2022</h4>
+                            <h5 class="text-center">จากข้อเสนอแนวทางการออกแบบและความเป็นไปได้</h5>
+                            <h1 class="text-center" style="
+                            font-weight: 700;
+                            font-size: 64px;
+                            line-height: 102px;
+                            color: #28FF35;">
+                                90 ทีม 66 ข้อเสนอ
+                            </h1>
+                            <h5 class="text-center" style=" color: #28FF35;">ทั้งด้านการออกแบบและกลไกมาตรการ</h5>
+                            <p class="text-center" style="font-weight: 400;
+                            font-size: 14px;
+                            line-height: 22px;
+                            color: #FFFFFF;">
+                       นิสิตนักศึกษาคณะสถาปัตยกรรมศาสตร์ คณะรัฐศาสตร์ และคณะพาณิชยกรรมศาสตร์และการบัญชี และมืออาชีพ ทั้งสถาปนิก <br>
+                       นักผังเมือง ภูมิสถาปนิก นักกฎหมายเฉพาะทาง นักศึกษาปริญญาโทและเอก อาจารย์ ผู้จัดการโครงการ ผู้ประสานงาน <br>
+                      นักออกแบบนวัตกรรม นักวิจัยนวัตกรรม นักพัฒนาโปรแกรม นักออกแบบประสบการณ์และผลิตภัณฑ์ Project Marketing Officer  <br>
+                      Product Operation Specialist ฯลฯ <br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-content-13">
+                    <div class="base-image-container">
+                        <div class="base-bg-image-container hack">
+                            <div>
+                                <h3 style="font-weight: 700;
+                                font-size: 32px;
+                                line-height: 51px;
+                                text-align: center;
+                                color: #FFFFFF;">ข้อเสนอแบ่งตามประเภทที่ดิน</h3>
+                                <p class="text-center" style="font-weight: 400;
+                                font-size: 14px;
+                                line-height: 22px;
+                                color: #FFFFFF;">
+                                    ทำให้ได้โอกาสในการพัฒนาพื้นที่สีเขียวรูปแบบใหม่ ๆ ทั้งในพื้นที่ของรัฐ กึ่งรัฐ และที่ดินเอกชน อีกกว่า 21 ความเป็นไปได้ <br>
+                                    อาทิ ในพื้นที่ราชพัสดุ พื้นที่โรงเรียน พื้นที่ริมทางรถไฟ พื้นที่ระบบขนส่งสาธารณะ พื้นที่สะพานลอย พื้นที่ซอยตัน <br>
+                                    หรือในพื้นที่ธนาคารสาขา พื้นที่ร้านสะดวกซื้อ หรือสวนกระถางเคลื่อนที่ <br>
+                                </p>
+                            </div>
+                            <img src="./assets/images/bg-black/base-gif-2.gif" width="100%" alt="">
+                        </div>
+                        <div class="base-image-content-3-1">
+                            <h5 class="m-0" style="color: #28FF35;">11 ประเภท</h5>
+                            <h2 class="m-0" style="color: #28FF35;; margin: 0;">
+                                ที่ดินรัฐ
+                            </h2>
+                            <p>1. ที่ราชพัสดุ (ที่ดินธนารักษ์) <br>
+                                2. พื้นที่โรงเรียน <br>
+                                3. พื้นที่วัด ศาสนสถาน <br>
+                                4. ศูนย์สาธารณสุข กทม. <br>
+                                5. พื้นที่ใต้ทางด่วน <br>
+                                6. พื้นที่ริมถนน/ทางเท้า <br>
+                                7. พื้นที่ริมทางรถไฟ <br>
+                                8. สะพานลอย <br> 
+                                9. พื้นที่ทางยกระดับ/วงแหวน <br>
+                                10. พื้นที่ท้ายซอยตัน <br>
+                                11. พื้นที่ในระบบขนส่งมวลชน/รถไฟฟ้า/ป้ายรถเมล์</p> <br>
+                        </div>
+                        <div class="base-image-content-3-2">
+                            <h1 style="font-weight: 700;
+                            font-size: 96px;
+                            text-align: right;
+                            line-height: 60px;
+                            color: #28FF35;">
+                                21
+                            </h1>
+                            <h4 class="text-end" style=" color: #28FF35;">ความเป็นไปได้ใหม่</h4>
+                        </div>
+                    </div>
+                </div>   
+                <div class="main-content-14">
+                    <div class="base-image-container">
+                        <div class="sub-content-3"> <p class="text-center" style="font-weight: 400;
+                            font-size: 14px;
+                            line-height: 22px;
+                            color: #FFFFFF;">
+                            จากความเป็นไปได้ดังกล่าว ตามข้อเสนอของ GREENER BANGKOK HACKATHON 2022  <br>
+                            ในที่ดินของรัฐ จากการเพิ่มพื้นที่ราชพัสดุ พื้นที่โรงเรียน พื้นที่ศูนย์สาธารณสุขชุมชน พื้นที่ริมทางรถไฟ  <br>
+                            พื้นที่สะพานลอย และพื้นที่ซอยตัน จะทำให้กรุงเทพมีพื้นที่สีเขียวสาธารณะกว่า 20.2 ตารางเมตรต่อคน <br>
+                            </p> </div>
+                        <div>
+                        <div class="sub-content-4">
+                            <p class="text-center" style="font-weight: 400;
+                            font-size: 14px;
+                            line-height: 22px;
+                            color: #FFFFFF;">
+                                และหากเพิ่มความเป็นไปได้ในที่ดินเอกชน อาทิ พื้นที่เอกชนรกร้าง พื้นที่ลานจอดรถ ธนาคารสาขา <br>
+                                ร้านสะดวกซื้อ พื้นที่ระหว่างรั้ว พื้นที่ว่างตามกฎหมายอาคาร พื้นที่ระเบียง พื้นที่เขียวในอาคาร <br>
+                                และสวนกระถางเคลื่อนที่ กรุงเทพจะมีพื้นที่สีเขียวสาธารณะกว่า 24.5 ตารางเมตรต่อคน
+                            </p>
+                        </div>
+                        <div class="sub-content-5">
+                            <p class="text-center" style="font-weight: 400;
+                            font-size: 14px;
+                            line-height: 22px;
+                            color: transparent">
+                                และหากเพิ่มความเป็นไปได้ในที่ดินเอกชน อาทิ พื้นที่เอกชนรกร้าง พื้นที่ลานจอดรถ ธนาคารสาขา <br>
+                                ร้านสะดวกซื้อ พื้นที่ระหว่างรั้ว พื้นที่ว่างตามกฎหมายอาคาร พื้นที่ระเบียง พื้นที่เขียวในอาคาร <br>
+                                และสวนกระถางเคลื่อนที่ กรุงเทพจะมีพื้นที่สีเขียวสาธารณะกว่า 24.5 ตารางเมตรต่อคน
+                            </p>
+                        </div>
+                            
+                        </div>
+                        <div class="base-bg-image-container">
+                            <img src="./assets/images/bg-black/base-bg-main-3.png" width="100%" height="100%" alt="">
+                            <img class="base-bg-3-1" src="./assets/images/bg-black/base-bg-3-1.png" width="100%" height="100%" alt="">
+                            <img class="base-bg-3-2" src="./assets/images/bg-black/base-bg-3-2.png" width="100%" height="100%" alt="">
+                            <img class="base-bg-3-3" src="./assets/images/bg-black/base-bg-3-3.png" width="100%" height="100%" alt="">
+                        </div>
+                        <div class="base-image-content-4-1">
+                            <p>
+                                <span style="color: #28FF35;">1. ที่ราชพัสดุ (ที่ดินธนารักษ์)</span><br>
+                                <span style="color: #28FF35;">2. พื้นที่โรงเรียน</span> <br>
+                                <span style="color: #28FF35;">3. พื้นที่วัด ศาสนสถาน </span><br>
+                                <span style="color: #28FF35;">4. พื้นที่ในระบบขนส่งมวลชน/รถไฟฟ้า/ป้ายรถเมล์</span> <br>
+                                <span style="color: #28FF35;">5. พื้นที่ใต้ทางด่วน</span> <br>
+                                <span style="color: #28FF35;">6. พื้นที่ริมถนน/ทางเท้า</span> <br>
+                                <span style="color: #28FF35;">7. พื้นที่ริมทางรถไฟ</span> <br>
+                                <span style="color: #28FF35;">8. สะพานลอย</span> <br>
+                                <span style="color: #28FF35;">9. พื้นที่ทางยกระดับ/วงแหวน</span> <br>
+                                <span style="color: #28FF35;">10. พื้นที่ท้ายซอยตัน</span> <br>
+                                <span style="color: #28FF35;">11. ศูนย์สาธารณสุข กทม.</span>
+                                <span style="color: transparent">12. พื้นที่เอกชนร้าง/รอการพัฒนา</span><br>
+                                <span style="color: transparent">13. พื้นที่ลานจอดรถ</span> <br>
+                                <span style="color: transparent">14. ธนาคารสาขา </span><br>
+                                <span style="color: transparent">15. ร้านสะดวกซื้อ</span> <br>
+                                <span style="color: transparent">16. พื้นที่ว่างระหว่างรั้ว</span> <br>
+                                <span style="color: transparent">17. พื้นที่ว่างตามกฎหมายอาคาร</span> <br>
+                                <span style="color: transparent">18. พื้นที่หลังคา</span> <br>
+                                <span style="color: transparent">19. พื้นที่ระเบียง/กันสาด และส่วนยื่นอาคาร</span> <br>
+                                <span style="color: transparent">20. พื้นที่เขียวในอาคาร</span> <br>
+                                <span style="color: transparent">21. สวนกระถางเคลื่อนที่</span> <br>
+                            </p>
+                        </div>
+                        <div class="base-image-content-4-3">
+                            <p>
+                                1. ที่ราชพัสดุ (ที่ดินธนารักษ์) <br>
+                                2. พื้นที่โรงเรียน <br>
+                                3. พื้นที่วัด ศาสนสถาน <br>
+                                4. พื้นที่ในระบบขนส่งมวลชน/รถไฟฟ้า/ป้ายรถเมล์ <br>
+                                5. พื้นที่ใต้ทางด่วน <br>
+                                6. พื้นที่ริมถนน/ทางเท้า <br>
+                                7. พื้นที่ริมทางรถไฟ <br>
+                                8. สะพานลอย <br>
+                                9. พื้นที่ทางยกระดับ/วงแหวน <br>
+                                10. พื้นที่ท้ายซอยตัน <br>
+                                11. ศูนย์สาธารณสุข กทม. <br>
+                                <span style="color: #28FF35;">12. พื้นที่เอกชนร้าง/รอการพัฒนา</span><br>
+                                <span style="color: #28FF35;">13. พื้นที่ลานจอดรถ</span> <br>
+                                <span style="color: #28FF35;">14. ธนาคารสาขา </span><br>
+                                <span style="color: #28FF35;">15. ร้านสะดวกซื้อ</span> <br>
+                                <span style="color: #28FF35;">16. พื้นที่ว่างระหว่างรั้ว</span> <br>
+                                <span style="color: #28FF35;">17. พื้นที่ว่างตามกฎหมายอาคาร</span> <br>
+                                <span style="color: #28FF35;">18. พื้นที่หลังคา</span> <br>
+                                <span style="color: #28FF35;">19. พื้นที่ระเบียง/กันสาด และส่วนยื่นอาคาร</span> <br>
+                                <span style="color: #28FF35;">20. พื้นที่เขียวในอาคาร</span> <br>
+                                <span style="color: #28FF35;">21. สวนกระถางเคลื่อนที่</span> <br>
+                            </p>
+                        </div>
+                        <div class="base-image-content-4-2">
+                            <h5 class="m-0">ข้อเสนอ GBH2022</h5>
+                            <h2 class="m-0" style="color: white;">ที่ดินรัฐ</h2>
+                            <h2 class="m-0 mb-3" style="color:#28FF35; line-height: 30px;">20.2</h2>
+                            <h5 class="m-0" style="color:#28FF35;">ตร.ม. ต่อคน</h5>
+                        </div>
+                        <div class="base-image-content-4-4">
+                            <h5 class="m-0">ข้อเสนอ GBH2022</h5>
+                            <h2 class="m-0" style="color: white;">ที่ดินรัฐ-เอกชน</h2>
+                            <h2 class="m-0 mb-3" style="color:#28FF35; line-height: 30px;">24.5</h2>
+                            <h5 class="m-0" style="color:#28FF35;">ตร.ม. ต่อคน</h5>
+                        </div>
+                        <div class="base-image-content-4-5">
+                            <p style="font-weight: 400;
+                            font-size: 14px;
+                            line-height: 22px;
+                            color: #FFFFFF;">
+                              ดังนั้น หากดำเนินการตามข้อเสนอ <br>
+                              ทั้ง 66 ข้อเสนอที่กล่าวข้างต้น <br>
+                              ได้ค่าเฉลี่ยการเข้าถึงพื้นที่สวนสาธารณะ <br>
+                              ที่ใกล้ที่สุดของคนกรุงเทพ <br>
+                              ได้ถึง 800 - 1000 เมตร และนั่นคือ
+                            </p>
+                            <div class="mt-5">
+                                <h5 class="m-0">ระยะเวลา</h5>
+                                <h2 class="m-0" style="color:#28FF35; line-height: 40px;">15 นาที</h2>
+                            </div>
+                        </div>
+                        <div class="base-image-content-4-6">
+                            <h5 class="m-0 mb-3">ขอบเขตบริการของ</h5>
+                            <h2 class="m-0 mb-4" style="color: white;  line-height: 30px;">สวนสาธารณะ</h2>
+                            <h2 class="m-0 mb-3" style="color:#28FF35; line-height: 30px;">800-1,000 เมตร</h2>
+                            <img class="ratio-img" src="./assets/images/bg-black/base-bg-sub-2-5.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="main-content-15">
+                    <div class="base-image-container">
+                        <p class="text-center" style="font-weight: 400;
+                        font-size: 14px;
+                        line-height: 22px;
+                        color: #FFFFFF;">เต่เรื่องราวของการทำกรุงเทพฯ ให้เป็นเมืองสีเขียว 15 นาที  <br>
+                            ยังไม่จบเพียงแค่นั้นเพราะคำถามสำคัญกว่า คือ เราจะทำตามข้อเสนอข้างต้นได้อย่างไร ?</p>
+                        <h4 class="text-center" style="color: white;">มาลองดูความเป็นไปได้ในการดำเนินการกัน</h4>
+                    </div>
+                </div>
+                <div class="main-content-16">  
+                    <div class="row m-0 h-100 align-items-center position-relative">
+                        <div class="header-content-5-1">
+                            <h5 style="color: white;">ข้อเสนอแบ่งตามประเภทที่ดิน</h5>
+                        </div>
+                        <div class="header-content-5-2">
+                            <h5 style="color: white;">ขอบเขตการให้บริการพื้นที่สีเขียวในปัจจุบัน</h5>
+                        </div>
+                        <div class="header-content-5-3">
+                            <h5 style="color: white;">ขอบเขตการให้บริการพื้นที่สีเขียวในปัจจุบัน <br>
+                                วิเคราะห์กับความหนาแน่นของพื้นที่เมืองประชากร</h5>
+                        </div>
+                        <div class="header-content-5-4">
+                            <h5 style="color: white;">ขอบเขตการให้บริการพื้นที่สีเขียวในปัจจุบัน <br>
+                                วิเคราะห์กับความหนาแน่นของพื้นที่เมืองประชากร และพื้นที่ศักยภาพเดินได้</h5>
+                        </div>
+                        <div class="header-content-5-5">
+                            <h5 style="color: white;">ขอบเขตการให้บริการพื้นที่สีเขียวในปัจจุบัน <br>
+                                วิเคราะห์กับความหนาแน่นของพื้นที่เมืองประชากร “สูงวัย” และพื้นที่ศักยภาพเดินได้</h5>
+                        </div>
+                        <div class="header-content-5-6">
+                            <h5 style="color: white;"> PRIORITIZING & STRATEGIZING CRITERIA <br>
+                                พื้นที่ที่มีความเร่งด่วน พื้นที่ยุทธศาสตร์ในการดำเนินการ</h5>
+                        </div>
+
+                        <div class="header-content-5-7">
+                            <h5 style="color: white;">PRIORITIZING & STRATEGIZING CRITERIA <br>
+                                พื้นที่ที่มีความเร่งด่วน พื้นที่ยุทธศาสตร์ในการดำเนินการ</h5>
+                        </div>
+                        <div class="col-8 p-0">
+                            <div>
+                                <img src="./assets/images/bg-black/base-bg-5.png" width="100%" height="100%" alt="">
+                                <img class="base-bg-5-4" src="./assets/images/bg-black/base-bg-5-4.png" width="100%" height="100%" alt="">
+                                <img class="base-bg-5-1" src="./assets/images/bg-black/base-bg-5-1.png" width="100%" height="100%" alt="">
+                                <img class="base-bg-5-2" src="./assets/images/bg-black/base-bg-5-2.png" width="100%" height="100%" alt="">
+                                <img class="base-bg-5-3" src="./assets/images/bg-black/base-bg-5-3.png" width="100%" height="100%" alt="">
+                                <img class="base-bg-5-5" src="./assets/images/bg-black/base-bg-5-5.png" width="100%" height="100%" alt="">
+                                <img class="base-bg-5-6" src="./assets/images/bg-black/base-bg-5-6.png" width="100%" height="100%" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-content-17">
+                    <div class="base-image-container">
+                        <div class="base-bg-image-container">
+                            <div class="img-comp-container">
+                                <div class="img-comp-img" style="height: 100%;">
+                                  <img src="./assets/images/bg-black/base-slide-1.png" width="100%" height="100%">
+                                </div>
+                                <div class="img-comp-img img-comp-overlay" style="width: 100%; height: 100%;">
+                                  <img src="./assets/images/bg-black/base-slide-2.png" width="" height="100%">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="base-image-content-5-1">
+                            <h5>กรุงเทพฯ สู่เมืองที่ …</h5>
+                            <h2 style="color:#28FF35;">เขียวกว่า</h2>
+                            <p class="mb-5">เพื่อที่จะทำให้นโยบายสวน 15 นาที  <br>
+                                ของเมืองกรุงเทพสัมฤทธิ์ผล <br>
+                                และเป็นหน้าที่ของพวกเรา  <br>
+                                พลเมืองกรุงเทพทุกคน <br>
+                                ที่สามารถเข้ามามีส่วนร่วมกันได้</p>
+                            <p>เพื่อเปลี่ยนเมืองกรุงเทพ <br>
+                                จากพื้นที่สีเขียว 7.60 ตร.ม. ต่อคน
+                            </p>
+                            <h2 style="color:#28FF35; line-height: 30px;">24.50 <span style="font-size: 16px;">ตารางเมตรต่อคน</span></h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-content-18">
+                    <div class="base-image-container">
+                        <div class="base-bg-image-container">
+                            <div>
+                                <div class="img-comp-container">
+                                  <div class="img-comp-img" style="height: 100%;">
+                                    <img src="./assets/images/bg-black/base-slide-3.png" width="100%" height="100%">
+                                  </div>
+                                  <div class="img-comp-img img-comp-overlay" style="width: 100%; height: 100%;">
+                                    <img src="./assets/images/bg-black/base-slide-4.png" width="" height="100%">
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="base-image-content-5-2">
+                            <h5>กรุงเทพฯ สู่เมืองที่ …</h5>
+                            <h2 style="color:#28FF35;">เขียวใกล้</h2>
+                            <p class="mb-5">เพื่อที่จะทำให้นโยบายสวน 15 นาที  <br>
+                                ของเมืองกรุงเทพสัมฤทธิ์ผล <br>
+                                และเป็นหน้าที่ของพวกเรา  <br>
+                                พลเมืองกรุงเทพทุกคน <br>
+                                ที่สามารถเข้ามามีส่วนร่วมกันได้</p>
+                            <p>เพื่อเปลี่ยนเมืองกรุงเทพ <br>
+                                จากเมืองสีเขียว 60 นาที
+                            </p>
+                            <h2 style="color:#28FF35; line-height: 30px;">15 <span style="font-size: 16px;">นาที</span></h2>
+                        </div>
+                       
+                    </div>
+                </div>
+                <div class="main-content-19">
+                    <div class="base-image-container">
+                        <div class="mb-3">
+                            <p class="text-center mb-1">สนับสนุนโดย</p>
+                            <p class="text-center" style="font-weight: 400;">กองทุนพัฒนาสื่อปลอดภัยและสร้างสรรค์</p>
+                        </div>
+                        <div class="mb-3">
+                            <p class="text-center mb-1">ดำเนินการโดย</p>
+                            <p class="text-center" style="font-weight: 400;">ศูนย์ออกแบบและพัฒนาเมือง (UDDC) ศูนย์เชี่ยวชาญเฉพาะทางด้านยุทธศาสตร์เมือง จุฬาลงกรณ์มหาวิทยาลัย</p>
+                        </div>
+                        <div class="mb-3">
+                            <p class="text-center mb-1">ขอขอบคุณข้อมูลจาก</p>
+                            <p class="text-center" style="font-weight: 400;">
+                                โครงการ Greener Bangkok Hackathon 2022: แฮคกรุงเทพเพื่อเมืองที่เขียวกว่า เพื่อขับเคลื่อนเมืองของเราให้เขียวกว่าที่เคย <br>
+                                ขอขอบคุณผู้สนับสนุนโครงการ Greener Bangkok Hackathon 2022: มูลนิธิร็อคกี้เฟลเลอร์ / สถานเอกอัครราชทูตเนเธอร์แลนด์ <br>
+                                / กระทรวงพลังงาน / การไฟฟ้าฝ่ายผลิตแห่งประเทศไทย / สมาคมนิสิตเก่าวิศวกรรมศาสตร์แห่งจุฬาลงกรณ์มหาวิทยาลัย / <br>
+                                สำนักงานกองทุนสนับสนุนการสร้างเสริมสุขภาพ (สสส.) / ธนาคารกสิกรไทย จำกัด (มหาชน) / บริษัท แมกโนเลีย ควอลิตี้ <br>
+                                ดีเวล็อปเม้นต์ คอร์ปอเรชั่น จำกัด / บริษัท ภิรัชบุรี จำกัด / ศูนย์นิทรรศการและการประชุมไบเทค / บริษัท ไอคอนสยาม จำกัด / <br>
+                                บริษัท อมรินทร์พริ้นติ้ง แอนด์ พับลิชชิ่ง จำกัด (มหาชน)
+                            </p>
+                        </div>
+                        <div>
+                            <img class="me-3" src="./assets/images/bg-black/footer-logo-1.png" style="position: static; width: 46px; height: 50px;" alt="">
+                            <img src="./assets/images/bg-black/footer-logo-2.png" style="position: static; width: 42px; height: 50px;" width="42px" height="50px" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <div style="position: absolute; top: 0; width: 100%;" id="section-section">
+        <section class="m-0 p-0 0" style="height:1500px;"></section>
+        <section class="m-0 p-0 1" style="height:1500px;"></section>
+        <section class="m-0 p-0 2" style="height:400px;"></section>
+        <section class="m-0 p-0 3" style="height:400px;"></section>
+        <section class="m-0 p-0 4" style="height:400px;"></section>
+        <section class="m-0 p-0 5" style="height:400px;"></section>
+        <section class="m-0 p-0 6" style="height:400px;"></section>
+        <section class="m-0 p-0 7" style="height:400px;"></section>
+        <section class="m-0 p-0 8" style="height:400px;"></section>
+        <section class="m-0 p-0 9" style="height:400px;"></section>
+        <section class="m-0 p-0 10" style="height:400px;"></section>
+        <section class="m-0 p-0 11" style="height:400px;"></section>
+        <section class="m-0 p-0 12" style="height:400px;"></section>
+        <section class="m-0 p-0 13" style="height:400px;"></section>
+        <section class="m-0 p-0 14" style="height:400px;"></section>
+        <section class="m-0 p-0 15" style="height:400px;"></section>
+        <section class="m-0 p-0 16" style="height:400px;"></section>
+        <section class="m-0 p-0 17" style="height:400px;"></section>
+        <section class="m-0 p-0 18" style="height:400px;"></section>
+        <section class="m-0 p-0 19" style="height:400px;"></section>
+        <section class="m-0 p-0 20" style="height:400px;"></section>
+        <section class="m-0 p-0 21" style="height:400px;"></section>
+        <section class="m-0 p-0 22" style="height:400px;"></section>
+        <section class="m-0 p-0 23" style="height:400px;"></section>
+        <section class="m-0 p-0 24" style="height:400px;"></section>
+        <section class="m-0 p-0 25" style="height:400px;"></section>
+        <section class="m-0 p-0 26" style="height:400px;"></section>
+        <section class="m-0 p-0 27" style="height:400px;"></section>
+        <section class="m-0 p-0 28" style="height:400px;"></section>
+        <section class="m-0 p-0 29" style="height:400px;"></section>
+        <section class="m-0 p-0 30" style="height:400px;"></section>
+        <section class="m-0 p-0 31" style="height:400px;"></section>
+        <section class="m-0 p-0 32" style="height:400px;"></section>
+        <section class="m-0 p-0 33" style="height:400px;"></section>
+        <section class="m-0 p-0 34" style="height:400px;"></section>
+        <section class="m-0 p-0 35" style="height:400px;"></section>
+        <section class="m-0 p-0 36" style="height:400px;"></section>
+        <section class="m-0 p-0 37" style="height:400px;"></section>
+        <section class="m-0 p-0 38" style="height:400px;"></section>
+        <section class="m-0 p-0 39" style="height:1000px;"></section>
+        <section class="m-0 p-0 section-40 mb-4">
+            <div class="row m-0">
+                <div class="col-8"></div>
+                <div class="col-4">
+                    <p>นี่คือขอบเขตการให้บริการ <br>
+                        พื้นที่สีเขียวของกรุงเทพฯ ในปัจจุบัน <br>
+                        ท่านจะเห็นว่าพื้นที่บริเวณเมืองเก่า <br>
+                        เกาะรัตนโกสินทร์ ศูนย์กลางเมือง <br>
+                        อย่าง ปทุมวัน บางรัก สาทร สีลม  <br>
+                        มีพื้นที่สีเขียวที่สามารถเข้าถึงได้ <br>
+                        อย่างครอบคลุม
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="m-0 p-0 section-41 mb-4">
+            <div class="row m-0">
+                <div class="col-8"></div>
+                <div class="col-4">
+                    <p>แต่หากพิจารณาร่วมกับข้อมูลการกระ <br>
+                        จายตัวของประชากร จะพบว่ากลับมี <br>
+                        พื้นที่ประชากรหนาแน่น แต่กลับไม่มี <br>
+                        พื้นที่สีเขียวที่ให้บริการอยู่เลย <br>
+                        อาทิ พื้นที่วังทองหลาง พระโขนง บางนา <br> 
+                        ห้วยขวาง ธนบุรี บางกอกใหญ่ ภาษีเจริญ <br>
+                        เป็นต้น
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="m-0 p-0 section-42 mb-4">
+            <div class="row m-0">
+                <div class="col-8"></div>
+                <div class="col-4">
+                    <p>นอกจากนี้หากพิจารณา ร่วมกับ <br> 
+                        สัดส่วนประชากรสูงวัย <br> 
+                        จะยิ่งตอกย้ำความต้องการพื้นที่สีเขียวในบาง <br> 
+                        พื้นที่อย่างเด่นชัด
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="m-0 p-0 section-43 mb-4">
+            <div class="row m-0">
+                <div class="col-8"></div>
+                <div class="col-4">
+                    <p>
+                        ผนวกกับ ผลการวิเคราะห์พื้นที่เมือง <br>
+                        เดินได้ในพื้นที่กรุงเทพมหานคร จะพบว่า <br> 
+                        ในพื้นที่ที่ขาดการให้บริการพื้นที่สีเขียว <br>
+                        เหล่านั้น สามารถกำหนดพื้นที่เป้าหมาย <br>
+                        ในการขับเคลื่อนการพัฒนาพื้นที่สีเขียวใน <br>
+                        เมืองกรุงเทพมหานครได้อย่างมียุทธศาสตร์
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="m-0 p-0 section-44 mb-4">
+            <div class="row m-0">
+                <div class="col-8"></div>
+                <div class="col-4">
+                    <p class="mb-5">
+                        และนี่คือ ผลการวิเคราะหืพื้นที่ที่มีความ <br>
+                        จำเป็นเร่งด่วนในการดำเนินการพัฒนา <br>
+                        พื้นที่สีเขียวในกรุงเทพมหานคร <br> 
+                        สามารถคิดเป็นพื้นที่ที่จำเป็นต้องมีการดำเนิน <br> 
+                        การอย่างเร่งด่วนกว่า 21% หรือกว่า 196 <br>
+                        แห่ง ระยะกลางกว่า 20% จำนวน 186 แห่ง
+                    </p>
+
+                    <p>
+                        ความเร่งด่วน <br>
+                        และจำนวนสวน 15 นาทีที่ต้องการ
+                    </p>
+                    <h3>ระยะเร่งด่วน 21% </h3>
+                    <h5 class="mb-5">จำนวน 196 แห่ง </h5>
+
+                    <h3>ระยะกลาง 20%  </h3>
+                    <h5 class="mb-5">จำนวน 186 แห่ง</h5>
+                </div>
+            </div>
+        </section>
+        <section class="m-0  section-45" style="padding-bottom: 40vh;">
+            <div class="row m-0">
+                <div class="col-8"></div>
+                <div class="col-4">
+                    <p class="mb-5">
+                        จากข้อมูลชุดนี้ทำให้เราคนกรุงเทพ <br> 
+                        ได้ทราบว่า ปัจจุบันนี้ในพื้นที่ <br>
+                        กรุงเทพมหานครกว่า 1500 ไร่นี้ <br>
+                        มีพื้นที่เพียง 17 % เท่านั้น ที่ถือได้ว่าเป็น <br>
+                        พื้นที่สีเขียว 15 นาที นั่นหมายถึง <br>
+                        สามารถเข้าถึงพื้นที่สีเขียวได้ในระยะเวลา <br>
+                        เดินเท้า นั่นหมายความถึง <br>
+                        ยังมีพื้นที่ที่รอดำเนินการอีกกว่า 83%  <br>
+                        ทั่วกรุงเทพมหานคร
+                    </p>
+
+                    <p class="m-0">
+                        พื้นที่สีเขียว 15 นาที <br>
+                        ครอบคลุมพื้นที่
+                    </p>
+                    <h3 class="mb-5">ครอบคลุมพื้นที่ <br>
+                        17% </h3>
+
+                    <p class="m-0">ระยะกลาง 20%</p>
+                    <h3 class="mb-5">83%</h5>
+                </div>
+            </div>
+        </section>
+        <section class="m-0 p-0 46" style="height:400px;"></section>
+        <section class="m-0 p-0 47" style="height:400px;"></section>
+        <section class="m-0 p-0 48" style="height:100vh;"></section>
+    </div>
+
+  
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+    <script>
+
+    let scene;
+	let controller = new ScrollMagic.Controller();
+
+    let items = document.querySelectorAll("section");
+
+    items.forEach(function(element, index) {
+        let height = element.clientHeight; //height of current element
+        scene = new ScrollMagic.Scene({
+            duration: height,
+            triggerElement: element,
+            triggerHook: 0.5,
+            reverse: true
+        })
+            .on("enter leave", function() {
+                let image = document.getElementById("main-box");
+                image.className = ''
+                image.classList.add(`fadeIn-${index}`)
+
+                let superContainer = document.getElementById("super-container");
+                superContainer.className = ''
+                superContainer.classList.add(`super-${index}`)
+
+                let section = document.getElementById("section-section")
+                section.className = ''
+                section.classList.add(`on-${index}`)
+                //console.log(image);
+                // if (image.classList.contains("fadeOut")) {
+                //     image.classList.remove("fadeOut");
+                //     image.classList.add(`fadeIn-${index}`);
+                // } else {
+                //     image.classList.remove(`fadeIn-${index}`);
+                //     image.classList.add("fadeOut");
+                // }
+            })
+            // .addIndicators({ name: " - begin " }) // Testing
+            .addTo(controller);
+    });
+    </script>
+
+
+<script>
+    function initComparisons() {
+      var x, i;
+      /*find all elements with an "overlay" class:*/
+      x = document.getElementsByClassName("img-comp-overlay");
+      for (i = 0; i < x.length; i++) {
+        /*once for each "overlay" element:
+        pass the "overlay" element as a parameter when executing the compareImages function:*/
+        compareImages(x[i]);
+      }
+      function compareImages(img) {
+        var slider, img, clicked = 0, w, h;
+        /*get the width and height of the img element*/
+        w = img.offsetWidth;
+        h = img.offsetHeight;
+        console.log(w,h)
+        /*set the width of the img element to 50%:*/
+        img.style.width = (w / 2) + "px";
+        /*create slider:*/
+        slider = document.createElement("DIV");
+        slider.setAttribute("class", "img-comp-slider");
+        /*insert slider*/
+        img.parentElement.insertBefore(slider, img);
+        /*position the slider in the middle:*/
+        slider.style.top = (h / 2) - (slider.offsetHeight / 2) + "px";
+        slider.style.left = (w / 2) - (slider.offsetWidth / 2) + "px";
+        /*execute a function when the mouse button is pressed:*/
+        slider.addEventListener("mousedown", slideReady);
+        /*and another function when the mouse button is released:*/
+        window.addEventListener("mouseup", slideFinish);
+        /*or touched (for touch screens:*/
+        slider.addEventListener("touchstart", slideReady);
+        /*and released (for touch screens:*/
+        window.addEventListener("touchend", slideFinish);
+        function slideReady(e) {
+          /*prevent any other actions that may occur when moving over the image:*/
+          e.preventDefault();
+          /*the slider is now clicked and ready to move:*/
+          clicked = 1;
+          /*execute a function when the slider is moved:*/
+          window.addEventListener("mousemove", slideMove);
+          window.addEventListener("touchmove", slideMove);
+        }
+        function slideFinish() {
+          /*the slider is no longer clicked:*/
+          clicked = 0;
+        }
+        function slideMove(e) {
+          var pos;
+          /*if the slider is no longer clicked, exit this function:*/
+          if (clicked == 0) return false;
+          /*get the cursor's x position:*/
+          pos = getCursorPos(e)
+          /*prevent the slider from being positioned outside the image:*/
+          if (pos < 0) pos = 0;
+          if (pos > w) pos = w;
+          /*execute a function that will resize the overlay image according to the cursor:*/
+          slide(pos);
+        }
+        function getCursorPos(e) {
+          var a, x = 0;
+          e = (e.changedTouches) ? e.changedTouches[0] : e;
+          /*get the x positions of the image:*/
+          a = img.getBoundingClientRect();
+          /*calculate the cursor's x coordinate, relative to the image:*/
+          x = e.pageX - a.left;
+          /*consider any page scrolling:*/
+          x = x - window.pageXOffset;
+          return x;
+        }
+        function slide(x) {
+          /*resize the image:*/
+          img.style.width = x + "px";
+
+          console.log(img.style.width = x + "px")
+          /*position the slider:*/
+          slider.style.left = img.offsetWidth - (slider.offsetWidth / 2) + "px";
+        }
+      }
+    }
+    </script>
+    <script>
+        /*Execute a function that will execute an image compare function for each element with the img-comp-overlay class:*/
+        initComparisons();
+        </script>
+
+    <!-- <script>
+
+	// init controller
+    var controller = new ScrollMagic.Controller({globalSceneOptions: {triggerHook:1,duration: 1200}});
+
+    // section-1-1
+    
+	new ScrollMagic.Scene({triggerElement: "#sec1"})
+					.setClassToggle("#section-1-image-box", "fixed") // add class toggle
+					.addIndicators() 
+					.addTo(controller)
+       
+	new ScrollMagic.Scene({triggerElement: "#sec1"})
+                    .setClassToggle("#section-1-image-box","active-section-1-point-1")    // add class toggle
+					.addIndicators() 
+					.addTo(controller)
+    // section-1-2
+                    
+	new ScrollMagic.Scene({triggerElement: "#sec2"})
+                    .setClassToggle("#section-1-image-box", "fixed")// add class toggle
+					.addIndicators() 
+					.addTo(controller);
+
+    new ScrollMagic.Scene({triggerElement: "#sec2"})
+                    .setClassToggle("#section-1-image-box","active-section-1-point-2")    // add class toggle
+					.addIndicators() 
+					.addTo(controller);   
+
+    // section-1-3
+
+    new ScrollMagic.Scene({triggerElement: "#sec3"})
+                    .setClassToggle("#section-1-image-box", "fixed")// add class toggle
+					.addIndicators() 
+					.addTo(controller);
+
+    new ScrollMagic.Scene({triggerElement: "#sec3"})
+                    .setClassToggle("#section-1-image-box","active-section-1-point-3")    // add class toggle
+					.addIndicators() 
+					.addTo(controller);
+    
+    // section-1-4
+    new ScrollMagic.Scene({triggerElement: "#sec4"})
+                    .setClassToggle("#section-1-image-box", "fixed")// add class toggle
+					.addIndicators() 
+					.addTo(controller);
+
+    new ScrollMagic.Scene({triggerElement: "#sec4"})
+                    .setClassToggle("#section-1-image-box","active-section-1-point-4")    // add class toggle
+					.addIndicators() 
+					.addTo(controller);
+
+    // section-1-5
+    new ScrollMagic.Scene({triggerElement: "#sec5"})
+                    .setClassToggle("#accordion-1", "show")// add class toggle
+					.addIndicators() 
+					.addTo(controller);
+    new ScrollMagic.Scene({triggerElement: "#sec5"})
+                    .setClassToggle("#accordion-set-1", "display-show")// add class toggle
+					.addIndicators() 
+					.addTo(controller);
+    new ScrollMagic.Scene({triggerElement: "#sec5"})
+                    .setClassToggle("#content-with-base", "base-1")// add class toggle
+					.addIndicators() 
+					.addTo(controller);
+    
+    new ScrollMagic.Scene({triggerElement: "#sec6"})
+                    .setClassToggle("#accordion-2", "show")// add class toggle
+					.addIndicators() 
+					.addTo(controller);
+    new ScrollMagic.Scene({triggerElement: "#sec6"})
+                    .setClassToggle("#accordion-set-1", "display-show")// add class toggle
+					.addIndicators() 
+					.addTo(controller);
+    new ScrollMagic.Scene({triggerElement: "#sec6"})
+                    .setClassToggle("#content-with-base", "base-1")// add class toggle
+					.addIndicators() 
+					.addTo(controller);
+      
+    new ScrollMagic.Scene({triggerElement: "#sec7"})
+                    .setClassToggle("#accordion-3", "show")// add class toggle
+					.addIndicators() 
+					.addTo(controller);
+    new ScrollMagic.Scene({triggerElement: "#sec7"})
+                    .setClassToggle("#accordion-set-1", "display-show")// add class toggle
+					.addIndicators() 
+					.addTo(controller);
+    new ScrollMagic.Scene({triggerElement: "#sec7"})
+                    .setClassToggle("#content-with-base", "base-1")// add class toggle
+					.addIndicators() 
+					.addTo(controller);
+    
+    new ScrollMagic.Scene({triggerElement: "#sec8"})
+                    .setClassToggle("#accordion-4", "show")// add class toggle
+					.addIndicators() 
+					.addTo(controller);
+    new ScrollMagic.Scene({triggerElement: "#sec8"})
+                    .setClassToggle("#accordion-set-1", "display-show")// add class toggle
+					.addIndicators() 
+					.addTo(controller);
+    new ScrollMagic.Scene({triggerElement: "#sec8"})
+                    .setClassToggle("#content-with-base", "base-1")// add class toggle
+					.addIndicators() 
+					.addTo(controller);
+
+
+    new ScrollMagic.Scene({triggerElement: "#sec9"})
+                    .setClassToggle("#accordion-5", "show")// add class toggle
+					.addIndicators() 
+					.addTo(controller);
+    new ScrollMagic.Scene({triggerElement: "#sec9"})
+    .               setClassToggle("#accordion-set-1", "display-show")// add class toggle
+					.addIndicators() 
+					.addTo(controller);
+    new ScrollMagic.Scene({triggerElement: "#sec9"})
+                    .setClassToggle("#content-with-base", "base-1")// add class toggle
+					.addIndicators() 
+					.addTo(controller);
+
+
+    new ScrollMagic.Scene({triggerElement: "#sec10"})
+                    .setClassToggle("#accordion-6", "show")// add class toggle
+					.addIndicators() 
+					.addTo(controller);
+    new ScrollMagic.Scene({triggerElement: "#sec10"})
+                    .setClassToggle("#accordion-set-1", "display-show")// add class toggle
+					.addIndicators() 
+					.addTo(controller);
+    new ScrollMagic.Scene({triggerElement: "#sec10"})
+                    .setClassToggle("#content-with-base", "base-1")// add class toggle
+					.addIndicators() 
+					.addTo(controller);
+
+                    
+    new ScrollMagic.Scene({triggerElement: "#sec11"})
+                    .setClassToggle("#accordion-7", "show")// add class toggle
+					.addIndicators() 
+					.addTo(controller);
+    new ScrollMagic.Scene({triggerElement: "#sec11"})
+                    .setClassToggle("#accordion-set-2", "display-show")// add class toggle
+					.addIndicators() 
+					.addTo(controller);
+    new ScrollMagic.Scene({triggerElement: "#sec11"})
+                    .setClassToggle("#content-with-base", "base-1")// add class toggle
+					.addIndicators() 
+					.addTo(controller);
+
+                    
+    new ScrollMagic.Scene({triggerElement: "#sec12"})
+                    .setClassToggle("#accordion-8", "show")// add class toggle
+					.addIndicators() 
+					.addTo(controller);
+    new ScrollMagic.Scene({triggerElement: "#sec12"})
+                    .setClassToggle("#accordion-set-2", "display-show")// add class toggle
+					.addIndicators() 
+					.addTo(controller);
+    new ScrollMagic.Scene({triggerElement: "#sec12"})
+                    .setClassToggle("#content-with-base", "base-1")// add class toggle
+					.addIndicators() 
+					.addTo(controller);
+
+
+    new ScrollMagic.Scene({triggerElement: "#sec13"})
+                    .setClassToggle("#accordion-9", "show")// add class toggle
+					.addIndicators() 
+					.addTo(controller);
+    new ScrollMagic.Scene({triggerElement: "#sec13"})
+                    .setClassToggle("#accordion-set-2", "display-show")// add class toggle
+					.addIndicators() 
+					.addTo(controller);
+    new ScrollMagic.Scene({triggerElement: "#sec13"})
+                    .setClassToggle("#content-with-base", "base-1")// add class toggle
+					.addIndicators() 
+					.addTo(controller);
+
+
+    new ScrollMagic.Scene({triggerElement: "#sec14"})
+                    .setClassToggle("#accordion-10", "show")// add class toggle
+					.addIndicators() 
+					.addTo(controller);
+    new ScrollMagic.Scene({triggerElement: "#sec14"})
+                    .setClassToggle("#accordion-set-2", "display-show")// add class toggle
+					.addIndicators() 
+					.addTo(controller)
+    new ScrollMagic.Scene({triggerElement: "#sec14"})
+                    .setClassToggle("#content-with-base", "base-1")// add class toggle
+					.addIndicators() 
+					.addTo(controller);
+
+
+    new ScrollMagic.Scene({triggerElement: "#sec15"})
+                    .setClassToggle("#accordion-11", "show")// add class toggle
+					.addIndicators() 
+					.addTo(controller);
+    new ScrollMagic.Scene({triggerElement: "#sec15"})
+                    .setClassToggle("#accordion-set-2", "display-show")// add class toggle
+					.addIndicators() 
+					.addTo(controller);
+    new ScrollMagic.Scene({triggerElement: "#sec15"})
+                    .setClassToggle("#content-with-base", "base-1")// add class toggle
+					.addIndicators() 
+					.addTo(controller);
+
+
+    new ScrollMagic.Scene({triggerElement: "#sec16"})
+                    .setClassToggle("#accordion-12", "show")// add class toggle
+					.addIndicators() 
+					.addTo(controller);
+    new ScrollMagic.Scene({triggerElement: "#sec16"})
+                    .setClassToggle("#accordion-set-2", "display-show")// add class toggle
+					.addIndicators() 
+					.addTo(controller);
+    new ScrollMagic.Scene({triggerElement: "#sec16"})
+                    .setClassToggle("#content-with-base", "base-1")// add class toggle
+					.addIndicators() 
+					.addTo(controller);
+
+
+    new ScrollMagic.Scene({triggerElement: "#sec17"})
+                    .setClassToggle("#content-with-base", "base-2")// add class toggle
+					.addIndicators() 
+					.addTo(controller);
+
+    new ScrollMagic.Scene({triggerElement: "#sec18"})
+                    .setClassToggle("#content-with-base", "base-3")// add class toggle
+					.addIndicators() 
+					.addTo(controller);
+
+    new ScrollMagic.Scene({triggerElement: "#sec19"})
+                    .setClassToggle("#content-with-base", "base-4")// add class toggle
+					.addIndicators() 
+					.addTo(controller);
+
+                    new ScrollMagic.Scene({triggerElement: "#sec20"})
+                    .setClassToggle("#content-with-base", "base-5")// add class toggle
+					.addIndicators() 
+					.addTo(controller);
+
+                    new ScrollMagic.Scene({triggerElement: "#sec21"})
+                    .setClassToggle("#content-with-base", "base-6")// add class toggle
+					.addIndicators() 
+					.addTo(controller);
+
+                    new ScrollMagic.Scene({triggerElement: "#sec22"})
+                    .setClassToggle("#content-with-base", "base-7")// add class toggle
+					.addIndicators() 
+					.addTo(controller);
+
+
+                    new ScrollMagic.Scene({triggerElement: "#sec23"})
+                    .setClassToggle("#content-with-base", "base-8")// add class toggle
+					.addIndicators() 
+					.addTo(controller);
+
+                    new ScrollMagic.Scene({triggerElement: "#sec24"})
+                    .setClassToggle("#content-with-base", "base-9")// add class toggle
+					.addIndicators() 
+					.addTo(controller);
+
+                    new ScrollMagic.Scene({triggerElement: "#sec25"})
+                    .setClassToggle("#content-with-base", "base-10")// add class toggle
+					.addIndicators() 
+					.addTo(controller);
+
+                    new ScrollMagic.Scene({triggerElement: "#sec26"})
+                    .setClassToggle("#content-with-base", "base-11")// add class toggle
+					.addIndicators() 
+					.addTo(controller);
+
+                    new ScrollMagic.Scene({triggerElement: "#sec27"})
+                    .setClassToggle("#content-with-base", "base-12")// add class toggle
+					.addIndicators() 
+					.addTo(controller);
+
+                    new ScrollMagic.Scene({triggerElement: "#sec28"})
+                    .setClassToggle("#content-with-base", "base-13")// add class toggle
+					.addIndicators() 
+					.addTo(controller);
+
+                    new ScrollMagic.Scene({triggerElement: "#sec29"})
+                    .setClassToggle("#content-with-base", "base-14")// add class toggle
+					.addIndicators() 
+					.addTo(controller);
+
+                    new ScrollMagic.Scene({triggerElement: "#sec30"})
+                    .setClassToggle("#content-with-base", "base-15")// add class toggle
+					.addIndicators() 
+					.addTo(controller);
+
+                    new ScrollMagic.Scene({triggerElement: "#sec31"})
+                    .setClassToggle("#content-with-base", "base-16")// add class toggle
+					.addIndicators() 
+					.addTo(controller);
+
+
+                    new ScrollMagic.Scene({triggerElement: "#sec32"})
+                    .setClassToggle("#section-talk", "talk-2")// add class toggle
+					.addIndicators() 
+					.addTo(controller);
+
+                    new ScrollMagic.Scene({triggerElement: "#sec33"})
+                    .setClassToggle("#section-talk", "talk-3")// add class toggle
+					.addIndicators() 
+					.addTo(controller);
+
+                    new ScrollMagic.Scene({triggerElement: "#sec34"})
+                    .setClassToggle("#section-talk", "talk-4")// add class toggle
+					.addIndicators() 
+					.addTo(controller);
+
+                    new ScrollMagic.Scene({triggerElement: "#sec35"})
+                    .setClassToggle("#section-talk", "talk-5")// add class toggle
+					.addIndicators() 
+					.addTo(controller);
+
+                    new ScrollMagic.Scene({triggerElement: "#sec36"})
+                    .setClassToggle("#section-talk-2", "talk-2-1")// add class toggle
+					.addIndicators() 
+					.addTo(controller);
+        
+        
+</script> -->
+</body>
+</html>
