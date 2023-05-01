@@ -133,7 +133,6 @@
             justify-content: center;
             width: 100%;
             height: 100%;
-            transition: 0.8s all ease;
         }
 
         #main-box.fadeIn-2  .main-content-2, #main-box.fadeIn-3 .main-content-3,#main-box.fadeIn-4 .main-content-4,#main-box.fadeIn-5 .main-content-5{
@@ -183,7 +182,7 @@
             height: 100%;
         }
 
-        .main-content-6,.main-content-7,.main-content-8,.main-content-10{
+        .main-content-6{
             position: absolute;
             top: 0;
             left: 0;
@@ -196,7 +195,6 @@
             justify-content: center;
             width: 100%;
             height: 100%;
-            transition: 0.8s all ease;
         }
 
         .main-content-9{
@@ -206,13 +204,13 @@
             height: 100%;
             width: 100%;
             opacity: 0;
-            transition: 0.8s all ease;
             display: flex;
             align-items: center;
             justify-content: center;
             width: 100%;
             height: 100%;
-            transition: 0.8s all ease;
+            transition: 0.1s opacity ease,0.8s transform ease;
+            transform: translateY(100%);
         }
 
         .fadeIn-6 .main-content-6,
@@ -224,7 +222,26 @@
         .fadeIn-12 .main-content-6,
         .fadeIn-13 .main-content-6,
         .fadeIn-14 .main-content-6,
-        .fadeIn-15 .main-content-6,
+        .fadeIn-15 .main-content-6{
+            opacity: 1;
+        }
+
+        .main-content-7,.main-content-8,.main-content-10{
+            transform: translateY(100%);
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%; 
+            opacity: 0;
+            transition: 0.1s opacity ease,0.8s transform ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+        }
+
         .fadeIn-16 .main-content-7,
         .fadeIn-17 .main-content-8,
         .fadeIn-18 .main-content-9,
@@ -235,7 +252,8 @@
         .fadeIn-23 .main-content-10,
         .fadeIn-24 .main-content-10,
         .fadeIn-25 .main-content-10,
-        .fadeIn-26 .main-content-10{
+        .fadeIn-26 .main-content-10{   
+            transform: translateY(0);
             opacity: 1;
         }
 
@@ -415,16 +433,14 @@
             height: 100%;
             width: 100%;
             opacity: 0;
-            transition: 0.8s all ease;
             display: flex;
             align-items: center;
             justify-content: center;
             width: 100%;
             height: 100%;
-            transition: 0.8s all ease;
+            transform: translateY(100%);
+            transition: 0.1s opacity ease,0.8s transform ease;
         }
-        
-
 
         .fadeIn-27 .main-content-11,
         .fadeIn-28 .main-content-11,
@@ -439,7 +455,9 @@
         .fadeIn-37 .main-content-14,
         .fadeIn-38 .main-content-15{
             opacity: 1;
+            transform: translateY(0);
         }
+    
 
         .base-bg-2-1, .base-bg-2-2, .base-bg-2-3,.base-bg-2-4,.base-bg-2-5{
             opacity: 0;
@@ -571,17 +589,30 @@
             display: block;
         }
 
-
-        .main-content-16, .main-content-17,.main-content-18,.main-content-19{
+        .main-content-18{
             position: absolute;
             top: 0;
             left: 0;
             height: 100%;
             width: 100%;
             opacity: 0;
-            transition: 0.8s all ease;
             width: 100%;
             height: 100%;
+            transition: 0.8s opacity ease,0.8s transform ease;
+        }
+
+
+        .main-content-16,.main-content-17,.main-content-19{
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+            width: 100%;
+            height: 100%;
+            transform: translateY(100%);
+            transition: 0.1s opacity ease,0.8s transform ease;
         }
 
         .fadeIn-39 .main-content-16,
@@ -595,7 +626,10 @@
         .fadeIn-47 .main-content-18,
         .fadeIn-48 .main-content-19{
             opacity: 1;
+            transform: translateY(0);
+            z-index: 10000;
         }
+
 
         .main-content-16 .row{
             position: relative;
@@ -870,7 +904,7 @@
                         <div class="base-image-content-9">     
                             <h5>
                                 <span style="color: #FB0022; display: block;">
-                                    จะต้องใช้งบประมาณเท่าไหร่ ?
+                                    จะทำที่ไหนก่อน-หลัง ?
                                 </span>
                             </h5>
                         </div>
@@ -1417,10 +1451,10 @@
                         <div class="base-bg-image-container">
                             <div class="img-comp-container">
                                 <div class="img-comp-img" style="height: 100%;">
-                                  <img src="./assets/images/bg-black/base-slide-1.png" width="100%" height="100%">
+                                  <img src="./assets/images/bg-black/last-2.png" width="100%" height="100%">
                                 </div>
                                 <div class="img-comp-img img-comp-overlay" style="width: 100%; height: 100%;">
-                                  <img src="./assets/images/bg-black/base-slide-2.png" width="" height="100%">
+                                  <img src="./assets/images/bg-black/last-1.png" width="" height="100%">
                                 </div>
                             </div>
                         </div>
@@ -1445,10 +1479,10 @@
                             <div>
                                 <div class="img-comp-container">
                                   <div class="img-comp-img" style="height: 100%;">
-                                    <img src="./assets/images/bg-black/base-slide-3.png" width="100%" height="100%">
+                                    <img src="./assets/images/bg-black/last-4.png" width="100%" height="100%">
                                   </div>
                                   <div class="img-comp-img img-comp-overlay" style="width: 100%; height: 100%;">
-                                    <img src="./assets/images/bg-black/base-slide-4.png" width="" height="100%">
+                                    <img src="./assets/images/bg-black/last-3.png" width="" height="100%">
                                   </div>
                                 </div>
                             </div>
@@ -1501,43 +1535,43 @@
     <div style="position: absolute; top: 0; width: 100%;" id="section-section">
         <section class="m-0 p-0 0" style="height:1500px;"></section>
         <section class="m-0 p-0 1" style="height:1500px;"></section>
-        <section class="m-0 p-0 2" style="height:400px;"></section>
-        <section class="m-0 p-0 3" style="height:400px;"></section>
-        <section class="m-0 p-0 4" style="height:400px;"></section>
-        <section class="m-0 p-0 5" style="height:400px;"></section>
-        <section class="m-0 p-0 6" style="height:400px;"></section>
-        <section class="m-0 p-0 7" style="height:400px;"></section>
-        <section class="m-0 p-0 8" style="height:400px;"></section>
-        <section class="m-0 p-0 9" style="height:400px;"></section>
-        <section class="m-0 p-0 10" style="height:400px;"></section>
-        <section class="m-0 p-0 11" style="height:400px;"></section>
-        <section class="m-0 p-0 12" style="height:400px;"></section>
-        <section class="m-0 p-0 13" style="height:400px;"></section>
-        <section class="m-0 p-0 14" style="height:400px;"></section>
-        <section class="m-0 p-0 15" style="height:400px;"></section>
-        <section class="m-0 p-0 16" style="height:400px;"></section>
-        <section class="m-0 p-0 17" style="height:400px;"></section>
-        <section class="m-0 p-0 18" style="height:400px;"></section>
-        <section class="m-0 p-0 19" style="height:400px;"></section>
-        <section class="m-0 p-0 20" style="height:400px;"></section>
-        <section class="m-0 p-0 21" style="height:400px;"></section>
-        <section class="m-0 p-0 22" style="height:400px;"></section>
-        <section class="m-0 p-0 23" style="height:400px;"></section>
-        <section class="m-0 p-0 24" style="height:400px;"></section>
-        <section class="m-0 p-0 25" style="height:400px;"></section>
-        <section class="m-0 p-0 26" style="height:400px;"></section>
-        <section class="m-0 p-0 27" style="height:400px;"></section>
-        <section class="m-0 p-0 28" style="height:400px;"></section>
-        <section class="m-0 p-0 29" style="height:400px;"></section>
-        <section class="m-0 p-0 30" style="height:400px;"></section>
-        <section class="m-0 p-0 31" style="height:400px;"></section>
-        <section class="m-0 p-0 32" style="height:400px;"></section>
-        <section class="m-0 p-0 33" style="height:400px;"></section>
-        <section class="m-0 p-0 34" style="height:400px;"></section>
-        <section class="m-0 p-0 35" style="height:400px;"></section>
-        <section class="m-0 p-0 36" style="height:400px;"></section>
-        <section class="m-0 p-0 37" style="height:400px;"></section>
-        <section class="m-0 p-0 38" style="height:400px;"></section>
+        <section class="m-0 p-0 2" style="height:800px;"></section>
+        <section class="m-0 p-0 3" style="height:800px;"></section>
+        <section class="m-0 p-0 4" style="height:800px;"></section>
+        <section class="m-0 p-0 5" style="height:800px;"></section>
+        <section class="m-0 p-0 6" style="height:800px;"></section>
+        <section class="m-0 p-0 7" style="height:800px;"></section>
+        <section class="m-0 p-0 8" style="height:800px;"></section>
+        <section class="m-0 p-0 9" style="height:800px;"></section>
+        <section class="m-0 p-0 10" style="height:800px;"></section>
+        <section class="m-0 p-0 11" style="height:800px;"></section>
+        <section class="m-0 p-0 12" style="height:800px;"></section>
+        <section class="m-0 p-0 13" style="height:800px;"></section>
+        <section class="m-0 p-0 14" style="height:800px;"></section>
+        <section class="m-0 p-0 15" style="height:800px;"></section>
+        <section class="m-0 p-0 16" style="height:800px;"></section>
+        <section class="m-0 p-0 17" style="height:800px;"></section>
+        <section class="m-0 p-0 18" style="height:800px;"></section>
+        <section class="m-0 p-0 19" style="height:800px;"></section>
+        <section class="m-0 p-0 20" style="height:800px;"></section>
+        <section class="m-0 p-0 21" style="height:800px;"></section>
+        <section class="m-0 p-0 22" style="height:800px;"></section>
+        <section class="m-0 p-0 23" style="height:800px;"></section>
+        <section class="m-0 p-0 24" style="height:800px;"></section>
+        <section class="m-0 p-0 25" style="height:800px;"></section>
+        <section class="m-0 p-0 26" style="height:800px;"></section>
+        <section class="m-0 p-0 27" style="height:800px;"></section>
+        <section class="m-0 p-0 28" style="height:800px;"></section>
+        <section class="m-0 p-0 29" style="height:800px;"></section>
+        <section class="m-0 p-0 30" style="height:800px;"></section>
+        <section class="m-0 p-0 31" style="height:800px;"></section>
+        <section class="m-0 p-0 32" style="height:800px;"></section>
+        <section class="m-0 p-0 33" style="height:800px;"></section>
+        <section class="m-0 p-0 34" style="height:800px;"></section>
+        <section class="m-0 p-0 35" style="height:800px;"></section>
+        <section class="m-0 p-0 36" style="height:800px;"></section>
+        <section class="m-0 p-0 37" style="height:800px;"></section>
+        <section class="m-0 p-0 38" style="height:800px;"></section>
         <section class="m-0 p-0 39" style="height:1000px;"></section>
         <section class="m-0 p-0 section-40 mb-4">
             <div class="row m-0">
