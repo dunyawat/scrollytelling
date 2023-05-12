@@ -36,7 +36,7 @@
 
 .container-header{
     display: none;
-    padding: 10px;
+    padding: 5px;
     background-color: black;
     color: white;
     width: fit-content;
@@ -196,7 +196,7 @@ h4 span{
 
   
   .panel {
-    padding: 0 18px;
+    padding: 0 15px;
     height: 0px;
     background-color: white;
     overflow: hidden;
@@ -204,12 +204,12 @@ h4 span{
   }
 
   .accordion-header span{
-    width: 28px;
-    height: 28px;
+    width: 20px;
+    height: 20px;
     border-radius: 100%;
     background-color: #FFD380;
     border: 3px solid #E49600;
-    font-size: 16px;
+    font-size: 12px;
     font-weight: 700; 
     display: flex;
     justify-content: center;
@@ -218,13 +218,13 @@ h4 span{
 
   .accordion-header{
     font-weight: 700;
-    font-size: 20px;
+    font-size: 16px;
     line-height: 32px;
     background-color: transparent;
   }
 
   .accordion{
-      padding: 15px 5px;
+      padding: 2px 5px;
       border-bottom: 1.5px solid #E49600;
     }
 
@@ -351,7 +351,7 @@ h4 span{
       height: 100%;
       top: 0;
       left: 0;
-      background: rgba(97, 205, 245, 0.95);
+      background: rgba(0, 0, 0, 0.9);
       transform: translateY(500px);
       transition: all .75s ease;
   }
@@ -398,9 +398,6 @@ h4 span{
     opacity: 1;
     transition: all 0.75s ease;
   }
-
-
-
 
   .axis-line{
     width: 5px;
@@ -499,13 +496,16 @@ h4 span{
     position: absolute; top: 0; bottom: 0; left: 0; right: 0; padding-top: 50px; padding-bottom: 50px;
   }
 
+  .main-future-container{
+    padding: 0 10vw;
+  }
   .future-container{
-    height: 50vh;
+    height: 35vh;
   }
 
   .future-box h5{
-   font-size: 36px; font-weight: 700; line-height: 57px;
-    color: #61CDF5;
+   font-size: 30px; font-weight: 700; line-height: 35px;
+    color: #000;
   }
 
   .talk-sticy{
